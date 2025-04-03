@@ -10,6 +10,8 @@
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
+            width: 100%;
+            box-sizing: border-box;
         }
         .profile-header {
             display: flex;
@@ -21,24 +23,30 @@
             justify-content: space-between;
             align-items: flex-start;
             margin-bottom: 20px;
+            flex-wrap: wrap;
         }
         .profile-name {
             flex: 1;
+            min-width: 300px;
         }
         .profile-name h1 {
             margin-top: 0;
             margin-bottom: 10px;
             text-align: left;
             font-family: "Avenir Heavy";
+            font-size: 2em;
         }
         .profile-photos {
             display: flex;
             gap: 15px;
+            flex-wrap: wrap;
+            justify-content: center;
         }
         .photo-container {
             display: flex;
             flex-direction: column;
             align-items: center;
+            margin-bottom: 15px;
         }
         .profile-photos img {
             width: 200px;
@@ -55,7 +63,8 @@
         .recent-activities {
             margin-top: 20px;
             text-align: left;
-            max-width: 1200 px;
+            max-width: 1200px;
+            width: 100%;
         }
         .recent-activities h3 {
             border-bottom: 1px solid #ddd;
@@ -74,6 +83,7 @@
         .profile-info {
             flex: 1;
             min-width: 300px;
+            width: 100%;
         }
         .profile-info h2 {
             margin-top: 0;
@@ -94,6 +104,77 @@
             border-bottom: 1px solid #ddd;
             padding-bottom: 10px;
             margin-bottom: 20px;
+        }
+        
+        /* 响应式设计 - 媒体查询 */
+        @media screen and (max-width: 768px) {
+            .name-and-photos {
+                flex-direction: column;
+            }
+            
+            .profile-name {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            
+            .profile-photos {
+                justify-content: center;
+                width: 100%;
+            }
+            
+            .profile-name h1 {
+                text-align: center;
+                font-size: 1.8em;
+            }
+            
+            .profile-info h2 {
+                text-align: center;
+            }
+            
+            .profile-contact p {
+                text-align: center;
+            }
+        }
+        
+        @media screen and (max-width: 480px) {
+            .profile-photos {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .profile-photos img {
+                width: 180px;
+                height: 225px;
+            }
+            
+            .profile-name h1 {
+                font-size: 1.6em;
+            }
+            
+            .recent-activities li {
+                font-size: 0.9em;
+            }
+        }
+        
+        /* 确保导航菜单在移动端也能正常显示 */
+        @media screen and (max-width: 600px) {
+            header .header-inner {
+                flex-direction: column;
+                padding: 10px;
+            }
+            
+            header nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            header nav ul li {
+                margin: 5px 0;
+            }
+            
+            .logo {
+                margin-bottom: 10px;
+            }
         }
     </style>
 </head>
