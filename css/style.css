@@ -1,0 +1,438 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Global Font: Avenir and Avenir Next */
+  body {
+    font-family: "Avenir", "Avenir Next", sans-serif;
+    line-height: 1.8;
+    background-color: #f6f4e9;
+    color: #000;
+  }
+  
+  /* Header: Always full width, increased height */
+  header {
+    width: 100%;
+    padding: 20px 20px; /* Increased top/bottom padding for more height */
+    background: none;
+    border: none;
+    margin-bottom: 30px; /* Adding space between header and container */
+  }
+  
+  header::after {
+    content: '';
+    display: block;
+    width: 100vw; /* Full viewport width */
+    position: absolute;
+    left: 0;
+    border-bottom: 1px solid #ccc;
+    margin-top: 5px;
+  }
+  
+  .header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* color: #88402e; */
+  }
+  
+  /* Logo: Increased slightly to 45px height */
+  .logo {
+    height: 45px;
+    width: auto;
+  }
+  
+  /* Navigation */
+  nav {
+    width: 50%; /* Changed from 100% to 50% */
+    margin-left: auto; /* This pushes the nav to the right side */
+    padding-bottom: 5px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-around; /* Changed from space-between to space-around for better spacing */
+    align-items: center;
+    flex-wrap: nowrap;
+    /* Optionally, you can set a max-width for nav items container if needed */
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #88402e;
+    font-size: 20px;
+    /* Navigation uses Avenir Next Ultra Light */
+    font-family: "Avenir Next Ultra Light", "Avenir Next", "Avenir", sans-serif;
+    font-weight: 300;
+  }
+  
+  nav a:hover {
+    color: brown;
+  }
+  
+  /* Enhanced styling for the current/active navigation item */
+  nav li.active a {
+    font-weight: bold;
+    color: #943d1f; /* Match the hover color */
+    position: relative;
+  }
+
+  /* Add underline to active nav item */
+  nav li.active a::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #943d1f;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+  }
+  
+  /* Main Container: margin/padding for content */
+  .container {
+    width: 96%; /* Adjusted from 100% for some margin on sides */
+    /* max-width: 1200px; */
+    margin: 0 auto;
+    padding: 60px; /* Outer margin for main content */
+  }
+  
+  /* Main Content */
+  main {
+    padding: 20px 0px;
+  }
+  
+  .content {
+    display: flex;
+    gap: 4%; /* Adjusted gap */
+  }
+  
+  /* Add index page styling */
+  .index-page {
+    color: #88402e;
+  }
+
+  /* Left Column (66% width): with independent horizontal/vertical padding */
+  .left-column {
+    width: 68%; /* Exact width instead of flex ratio */
+    flex: none; /* Remove flex to use exact width */
+    padding: 80px 100px; /* 20px for top/bottom, 30px for left/right */
+    color: #88402e; /* Changed text color */
+  }
+  
+  .left-column p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-family: "Avenir Medium";
+    color: #88402e; /* Changed text color */
+  }
+  
+  /* Right Column (30% width): with independent horizontal/vertical padding */
+  .right-column {
+    width: 30%; /* Exact width instead of flex ratio */
+    flex: none; /* Remove flex to use exact width */
+    padding: 0px 100px; /* 20px for top/bottom, 30px for left/right */
+    color: #88402e; /* Changed text color */
+  }
+  
+  .right-column h2 {
+    margin-bottom: 1rem;
+    font-family: "Avenir Heavy"; /* Changed to regular font weight */
+  }
+  
+  /* News details styling: use browser default marker */
+  .right-column details {
+    margin-bottom: 10px;
+    background: none;
+    border: none;
+    padding: 0;
+  }
+  
+  .right-column details summary {
+    list-style: auto;
+    cursor: pointer;
+    padding-left: 20px;
+    font-weight: 400;
+  }
+  
+  .right-column details p {
+    padding: 5px 0 0 20px;
+    font-size: 0.9rem;
+    color: #88402e; /* Changed text color */
+  margin-left: 20px; /* 整体缩进20px */
+  }
+  
+  /* Footer */
+  footer {
+    width: 100%;
+    padding: 10px 20px;
+    margin-top: 20px; /* Added space above footer */
+    text-align: center;
+    /* background-color: rgba(255, 255, 255, 0.95); */
+    /* border-top: 1px solid #eee; */
+    /* box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1); */
+  }
+
+  /* Publication Page Styles */
+  .publications-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .publication-row {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    gap: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .publication-image {
+    flex: 0 0 150px; /* Fixed width for square image */
+    height: 150px; /* Same as width for square */
+  }
+  
+  .image-placeholder {
+    width: 100%;
+    height: 100%;
+    background-color: #e0e0e0;
+    border: 1px solid #ccc;
+  }
+  
+  .publication-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .publication-details p {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .publication-details em {
+    font-style: italic;
+  }
+  
+  .publication-details a {
+    color: #943d1f;
+    text-decoration: none;
+  }
+  
+  .publication-details a:hover {
+    text-decoration: underline;
+  }
+  
+  h1 {
+    margin-bottom: 30px;
+    font-weight: normal;
+    text-align: center;
+    color: #88402e;
+  }
+
+  .search-container {
+    width: 60%;
+    margin: 0 auto 30px;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .search-container input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Updated search button to use icon */
+  .search-container button {
+    padding: 10px;
+    width: 44px; /* Make the button square */
+    height: 44px;
+    background-color: #943d1f;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+  }
+
+  /* Adding search icon using pseudo-element */
+  .search-container button::before {
+    content: "\1F50D"; /* Unicode for magnifying glass */
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .search-container button:hover {
+    background-color: #7a3319;
+  }
+
+  /* Hide any text in the button */
+  .search-container button span {
+    display: none;
+  }
+  
+  /* Year Header Styles */
+  .year-header {
+    width: 80%;
+    margin: 30px auto 20px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #943d1f;
+    color: #88402e;
+    font-weight: normal;
+    font-size: 1.5rem;
+  }
+
+
+/* Older publications toggle styling */
+.older-publications-toggle {
+    width: 80%;
+    margin: 40px auto 20px;
+    text-align: center;
+  }
+  
+  .older-publications-toggle button {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+  }
+  
+  .older-publications-toggle button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  /* Search highlighting */
+  .search-active {
+    background-color: rgba(148, 61, 31, 0.05);
+  }
+  
+  /* Search bar enhancements */
+  #publicationSearch {
+    transition: all 0.3s ease;
+  }
+  
+  #publicationSearch:focus {
+    border-color: #943d1f;
+    box-shadow: 0 0 5px rgba(148, 61, 31, 0.5);
+  }
+
+  /* Google Calendar Styling */
+  .calendar-heading {
+    margin-top: 30px;
+    margin-bottom: 1rem;
+    font-weight: normal;
+  }
+
+  .google-calendar-container {
+    width: 100%;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Person Card Styling */
+  .person-card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    margin-bottom: 30px;
+    width: calc(25% - 30px); /* Adjusted width for smaller images */
+    align-items: center;
+  }
+  
+  .person-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .person-image {
+    width: 170px; /* Reduced from 200px */
+    height: 170px; /* Reduced from 200px */
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 10px;
+  }
+  
+  .person-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This will crop the image to fill the container */
+    object-position: center; /* Center the image within the container */
+  }
+  
+  .person-name {
+    text-align: center;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 0 5px;
+  }
+  
+  .person-email {
+    text-align: center;
+    font-family: "American Typewriter";
+    font-size: 0.9rem;
+    color: #555;
+    padding: 0 5px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 1200px) {
+    .person-card {
+      width: calc(25% - 30px); /* Adjusted to match the new sizing */
+    }
+  }
+
+  /* Specific styles for people page */
+  .people-container {
+    width: 50%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px;
+  }
+
+  .people-category {
+    margin-bottom: 40px;
+    text-align: left;
+    padding-left: 0; /* Remove any potential padding */
+  }
+
+  .people-category h2 {
+    margin-bottom: 20px;
+    font-weight: normal;
+    color: #333;
+    padding-left: 0; /* Ensure no padding that would offset alignment */
+    margin-left: 0; /* Ensure no margin that would offset alignment */
+  }
+
+  .people-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: flex-start;
+    max-width: 100%;
+    padding-left: 0; /* Ensure grid starts at the same position as headings */
+  }

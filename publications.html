@@ -1,0 +1,1235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Publications</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <style>
+    /* 高亮样式 */
+    .highlight {
+      background-color: #943d1f;
+      color: white
+    }
+    /* 无匹配提示样式 */
+    #no-match-message {
+      font-size: 1.2em;
+      color: #a00;
+      text-align: center;
+      margin: 20px 0;
+    }
+    /* 新增的出版物格式样式 */
+    .pub-title {
+      font-weight: bold;
+      margin-bottom: 4px;
+    }
+    .pub-authors {
+      margin-bottom: 4px;
+    }
+    .pub-venue {
+      font-style: italic;
+      margin-bottom: 8px;
+    }
+    .pub-id {
+      color: #666;
+      font-size: 0.85em;
+    }
+    .pdf-link {
+      margin-left: 8px;
+    }
+    .publication-details p {
+      margin-bottom: 0;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header always full width -->
+  <header>
+    <div class="header-inner">
+        <a href="index.html">
+            <img src="./images/netwis_logo.png" alt="NetWIS Logo" class="logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="people.html">People</a></li>
+                <li class="active"><a href="publications.html">Publications</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+  <!-- Main Container -->
+  <div class="container">
+    <!-- Main Content -->
+    <main>
+      <h1>Publications</h1>
+
+      <!-- Search Bar -->
+      <div class="search-container">
+        <input type="text" id="publicationSearch" placeholder="Search publications..." onkeyup="searchPublications()">
+        <button type="button" onclick="searchPublications()"></button>
+      </div>
+      
+      <!-- Publications List -->
+      <div class="publications-list">
+        
+        <!-- 2024 -->
+        <h2 class="year-header">2024</h2>
+        <div class="publication-row">
+          <div class="publication-details">
+            <div class="pub-title">FLuMe: Understanding Differential Spectrum Mobility Features in High Resolution</div>
+            <div class="pub-authors">Rui Zou, Wenye Wang</div>
+            <div class="pub-venue">IEEE Transactions on Mobile Computing, Vol. 23, No. 12, pp 14886-14900, Dec. 2024</div>
+            <div class="pub-id">[JP-50] <a href="#" class="pdf-link">pdf</a></div>
+          </div>
+        </div>
+        <div class="publication-row">
+          <div class="publication-details">
+            <div class="pub-title">Hybrid Zone: Bridging Acoustic and Wi-Fi for Enhanced Gesture Recognition</div>
+            <div class="pub-authors">Mengning Li, Wenye Wang</div>
+            <div class="pub-venue">Proc. of IEEE INFOCOM, May 2024</div>
+            <div class="pub-id">[CP-125]</div>
+          </div>
+        </div>
+        <div class="publication-row">
+          <div class="publication-details">
+            <div class="pub-title">Effi-Ace: Efficient and Accurate Prediction for High-Resolution Spectrum Tenancy</div>
+            <div class="pub-authors">Rui Zou, Wenye Wang</div>
+            <div class="pub-venue">Proc. of IEEE INFOCOM, May 2024</div>
+            <div class="pub-id">[CP-124]</div>
+          </div>
+        </div>
+
+        <!-- 2023 -->
+        <h2 class="year-header">2023</h2>
+        <div class="publication-row">
+          <div class="publication-details">
+            <div class="pub-title">Modeling and Analysis of Information Leakage under MUltiple Adversaries</div>
+            <div class="pub-authors">Lichen Fu, Wenye Wang</div>
+            <div class="pub-venue">Proc. of IEEE GLOBECOM 2023, Kuala Lumpur, December 2023</div>
+            <div class="pub-id">[CP-123]</div>
+          </div>
+        </div>
+        <div class="publication-row">
+          <div class="publication-details">
+            <div class="pub-title">Towards Fast and Energy-Efficient Access to Cloudlets in Hostile Environments</div>
+            <div class="pub-authors">Jie Wang, Wenye Wang, Cliff Wang</div>
+            <div class="pub-venue">IEEE Transactions on Wireless Communications, Vol. 22, No. 11, pp 8320-8335, November 2023</div>
+            <div class="pub-id">[JP-49] <a href="#" class="pdf-link">pdf</a></div>
+          </div>
+        </div>
+        <div class="publication-row">
+          <div class="publication-details">
+            <div class="pub-title">Towards Multi-Person Gesture Recognition using Commodity Wi-Fi</div>
+            <div class="pub-authors">Xiaozhuang Liu, Zhenxing Niu, Wenye Wang</div>
+            <div class="pub-venue">Proc. of IEEE ICCCN 2023 (invited paper), July 2023</div>
+            <div class="pub-id">[CP-122]</div>
+          </div>
+        </div>        
+        <div class="publication-row">
+          <div class="publication-details">
+            <div class="pub-title">TOP: Total Occupancy Guided Prediction of Binary Spectrum Tenancy</div>
+            <div class="pub-authors">Rui Zou, Wenye Wang</div>
+            <div class="pub-venue">Proc. of IEEE ICC, May 2023</div>
+            <div class="pub-id">[CP-121] <a href="#" class="pdf-link">pdf</a></div>
+          </div>
+        </div>        
+        <div class="publication-row">
+          <div class="publication-details">
+            <div class="pub-title">The Vulnerability and Enhancement of AKA Protocol for Mobile Authentication in LTE/5G Networks</div>
+            <div class="pub-authors">Teng Fei, Wenye Wang</div>
+            <div class="pub-venue">Computer Networks (Elsevier), March 2023</div>
+            <div class="pub-id">[JP-47]</div>
+          </div>
+        </div>        
+        <div class="publication-row">
+          <div class="publication-details">
+            <div class="pub-title">Remedy or Resource Drain: Modeling and Analysis of Massive Task Offloading Processes in the Fog</div>
+            <div class="pub-authors">Jie Wang, Wenye Wang, Cliff Wang</div>
+            <div class="pub-venue">IEEE Internet of Things Journal, February 2023 (Impact Factor = 10.238)</div>
+            <div class="pub-id">[JP-48] <a href="#" class="pdf-link">pdf</a></div>
+          </div>
+        </div>
+
+        <!-- 2022 (暂无期刊/会议中列出的) -->
+
+        <!-- 2021 -->
+         <h2 class="year-header">2021</h2>
+        <div class="publication-row">
+          <div class="publication-details">
+            <div class="pub-title">Downlink Decoding Based Accurate Measurement of LTE Spectrum Tenancy</div>
+            <div class="pub-authors">Rui Zou, Wenye Wang</div>
+            <div class="pub-venue">IEEE Transactions on Mobile Computing, December 2021</div>
+            <div class="pub-id">[JP-46] <a href="#" class="pdf-link">pdf</a></div>
+          </div>
+        </div>
+        <div class="publication-row">
+          <div class="publication-details">
+            <div class="pub-title">Temporal and Spectral Analysis of Spectrum Hole Distributions in an LTE Cell</div>
+            <div class="pub-authors">Rui Zou, Wenye Wang, Huaiyu Dai</div>
+            <div class="pub-venue">Proc. of IEEE GLOBECOM, December 2021</div>
+            <div class="pub-id">[CP-120] <a href="#" class="pdf-link">pdf</a></div>
+          </div>
+        </div>
+
+        <!-- 2020 -->
+        <h2 class="year-header">2020</h2>
+        <div class="publication-row">
+          <div class="publication-details">
+            <div class="pub-title">Spectrum Activity Surveillance: Modeling and Analysis from Perspectives of Surveillance Coverage and Culprit Detection</div>
+            <div class="pub-authors">Jie Wang, Wenye Wang, Cliff Wang, Min Song</div>
+            <div class="pub-venue">IEEE Transactions on Mobile Computing, October 2020</div>
+            <div class="pub-id">[JP-45] <a href="#" class="pdf-link">pdf</a></div>
+          </div>
+        </div>        
+        <div class="publication-row">
+          <div class="publication-details">
+            <div class="pub-title">U-CIMAN: Uncover Spectrum and User Information in LTE Mobile Access Networks</div>
+            <div class="pub-authors">Rui Zou, Wenye Wang</div>
+            <div class="pub-venue">Proc. of IEEE INFOCOM, July 2020</div>
+            <div class="pub-id">[CP-119] <a href="#" class="pdf-link">pdf</a></div>
+          </div>
+        </div>        
+        <div class="publication-row">
+          <div class="publication-details">
+            <div class="pub-title">Modeling and Analysis of Conflicting Information Propagation in a Finite Time Horizon</div>
+            <div class="pub-authors">Jie Wang, Sigit Pambudi, Wenye Wang, Cliff Wang</div>
+            <div class="pub-venue">IEEE/ACM Transactions on Networking, Vol. 28, No. 3, pp 972-985, June 2020</div>
+            <div class="pub-id">[JP-44] <a href="#" class="pdf-link">pdf</a></div>
+          </div>
+        </div>
+
+        <!-- 2019 -->
+        <h2 class="year-header">2019</h2>
+        <div class="publication-row">
+          <div class="publication-details">
+            <div class="pub-title">Change Detection Based Segmentation and Modeling of LTE Spectrum Tenancy</div>
+            <div class="pub-authors">Rui Zou, Wenye Wang</div>
+            <div class="pub-venue">Proc. of IEEE GLOBECOM, December 2019</div>
+            <div class="pub-id">[CP-118] <a href="#" class="pdf-link">pdf</a></div>
+          </div>
+        </div>  
+        <div class="publication-row">
+          <div class="publication-details">
+            <div class="pub-title">LTE is Vulnerable: Implementing Identity Spoofing and Denial-of-Service Attacks in LTE Networks</div>
+            <div class="pub-authors">Teng Fei, Wenye Wang</div>
+            <div class="pub-venue">Proc. of IEEE GLOBECOM, December 2019</div>
+            <div class="pub-id">[CP-117] <a href="#" class="pdf-link">pdf</a></div>
+          </div>
+        </div>        
+        <div class="publication-row">
+          <div class="publication-details">
+            <div class="pub-title">Resilience of IoT Systems Against Edge-induced Cascade-of-Failures: A Networking Perspective</div>
+            <div class="pub-authors">Jie Wang, Sigit Pambudi, Wenye Wang, Min Song</div>
+            <div class="pub-venue">IEEE Internet of Things Journal, pp. 6952-6963, August 2019</div>
+            <div class="pub-id">[JP-43] <a href="#" class="pdf-link">pdf</a></div>
+          </div>
+        </div>        
+        <div class="publication-row">
+          <div class="publication-details">
+            <div class="pub-title">On Studying Information Dissemination in Social-Physical Interdependent Networks</div>
+            <div class="pub-authors">Mingkui Wei, Jie Wang, Zhuo Lu, Wenye Wang</div>
+            <div class="pub-venue">Proc. of IEEE ICC, May 2019</div>
+            <div class="pub-id">[CP-116] <a href="#" class="pdf-link">pdf</a></div>
+          </div>
+        </div>        
+        <div class="publication-row">
+          <div class="publication-details">
+            <div class="pub-title">SAS: Modeling and Analysis of Spectrum Activity Surveillance in Wireless Overlay Networks</div>
+            <div class="pub-authors">Jie Wang, Wenye Wang, Cliff Wang</div>
+            <div class="pub-venue">Proc. of IEEE INFOCOM, April 2019</div>
+            <div class="pub-id">[CP-115] <a href="#" class="pdf-link">pdf</a></div>
+          </div>
+        </div>
+
+        <!-- 2018 -->
+        <h2 class="year-header">2018</h2>
+        <div class="publication-row">
+          <div class="publication-details">
+            <div class="pub-title">The Aftermath of Broken Links: Resilience of IoT Systems from A Networking Perspective</div>
+            <div class="pub-authors">Sigit Pambudi, Jie Wang, Wenye Wang, Min Song, Xiaoyan Zhu</div>
+            <div class="pub-venue">Proc. of IEEE ICCCN, August 2018</div>
+            <div class="pub-id">[CP-114] <a href="#" class="pdf-link">pdf</a></div>
+          </div>
+        </div>        
+        <div class="publication-row">
+          <div class="publication-details">
+            <div class="pub-title">On Characterizing Information Dissemination During City-Wide Cascading Failures in Smart Grid</div>
+            <div class="pub-authors">Mingkui Wei, Zhuo Lu, Wenye Wang</div>
+            <div class="pub-venue">IEEE Systems Journal, Vol 12, No. 4, pp. 3404-3413, June 2018</div>
+            <div class="pub-id">[JP-41] <a href="#" class="pdf-link">pdf</a></div>
+          </div>
+        </div>        
+        <div class="publication-row">
+          <div class="publication-details">
+            <div class="pub-title">A Flow Rule Timeout Assignment Algorithm for SDN-Assisted Network MIMO Systems</div>
+            <div class="pub-authors">Rui Zou, Wenye Wang</div>
+            <div class="pub-venue">Proc. of IEEE ICC, May 2018</div>
+            <div class="pub-id">[CP-113] <a href="#" class="pdf-link">pdf</a></div>
+          </div>
+        </div>        
+        <div class="publication-row">
+          <div class="publication-details">
+            <div class="pub-title">Fast Rendezvous for Spectrum-Agile IoT Devices with Limited Channel Hopping Capability</div>
+            <div class="pub-authors">Sigit Pambudi, Wenye Wang, Cliff Wang</div>
+            <div class="pub-venue">Proc. of IEEE INFOCOM, April 2018</div>
+            <div class="pub-id">[CP-112] <a href="#" class="pdf-link">pdf</a></div>
+          </div>
+        </div>
+
+        <!-- 2017 -->
+        <h2 class="year-header">2017</h2>
+        <div class="publication-row">
+          <div class="publication-details">
+            <div class="pub-title">Detection of Infections using Graph Signal Processing in Heterogeneous Networks</div>
+            <div class="pub-authors">Seyyedali Hosseinalipour, Jie Wang, Wenye Wang, Huaiyu Dai</div>
+            <div class="pub-venue">Proc. of IEEE GLOBECOM, December 2017</div>
+            <div class="pub-id">[CP-111] <a href="#" class="pdf-link">pdf</a></div>
+          </div>
+        </div>        
+        <div class="publication-row">
+          <div class="publication-details">
+            <div class="pub-title">From Isolation Time to Node Resilience: Impact of Cascades in D2D-based Social Networks</div>
+            <div class="pub-authors">Sigit Pambudi, Wenye Wang, Cliff Wang</div>
+            <div class="pub-venue">Proc. of IEEE GLOBECOM, December 2017</div>
+            <div class="pub-id">[CP-110] <a href="#" class="pdf-link">pdf</a></div>
+          </div>
+        </div>        
+        <div class="publication-row">
+          <div class="publication-details">
+            <div class="pub-title">How Durable and Stable is A File Sharing on the Move in Cellular-assisted D2D Communications?</div>
+            <div class="pub-authors">Yali Wang, Wenye Wang, Mei Song</div>
+            <div class="pub-venue">Proc. of IEEE GLOBECOM, December 2017</div>
+            <div class="pub-id">[CP-109] <a href="#" class="pdf-link">pdf</a></div>
+          </div>
+        </div>        
+        <div class="publication-row">
+          <div class="publication-details">
+            <div class="pub-title">Modeling and Strategy Design for Spectrum Monitoring over A Geographical Region</div>
+            <div class="pub-authors">Jie Wang, Wenye Wang, Cliff Wang</div>
+            <div class="pub-venue">Proc. of IEEE GLOBECOM, December 2017</div>
+            <div class="pub-id">[CP-108] <a href="#" class="pdf-link">pdf</a></div>
+          </div>
+        </div>        
+        <div class="publication-row">
+          <div class="publication-details">
+            <div class="pub-title">On Modeling and Understanding Vehicle Evacuation Attacks in VANETs</div>
+            <div class="pub-authors">Mingkui Wei, Zhuo Lu, Wenye Wang</div>
+            <div class="pub-venue">Proc. of IEEE ICC, June 2017</div>
+            <div class="pub-id">[CP-107] <a href="#" class="pdf-link">pdf</a></div>
+          </div>
+        </div>
+
+        <!-- 2016 -->
+        <h2 class="year-header">2016</h2>
+        <div class="publication-row">
+          <div class="publication-details">
+            <div class="pub-title">On the Evolution and Impact of Mobile Botnets in Wireless Networks</div>
+            <div class="pub-authors">Zhuo Lu, Wenye Wang, Cliff Wang</div>
+            <div class="pub-venue">IEEE Transactions on Mobile Computing, Vol. 15, pp. 2304-2316, September 2016</div>
+            <div class="pub-id">[JP-39] <a href="#" class="pdf-link">pdf</a></div>
+          </div>
+        </div>  
+        <div class="publication-row">
+          <div class="publication-details">
+            <div class="pub-title">Data-centric threats and their impacts to real-time communications in smart grid</div>
+            <div class="pub-authors">Mingkui Wei, Wenye Wang</div>
+            <div class="pub-venue">Journal of Computer Networks (Elsevier), pp. 174-188, July 2016</div>
+            <div class="pub-id">[JP-40] <a href="#" class="pdf-link">pdf</a></div>
+          </div>
+        </div>        
+        <div class="publication-row">
+          <div class="publication-details">
+            <div class="pub-title">How Robust Is A D2D-Based Messaging Service?</div>
+            <div class="pub-authors">Sigit Pambudi, Wenye Wang, Cliff Wang</div>
+            <div class="pub-venue">Proc. of IEEE GLOBECOM, December 2016</div>
+            <div class="pub-id">[CP-106] <a href="#" class="pdf-link">pdf</a></div>
+          </div>
+        </div>   
+        <div class="publication-row">
+          <div class="publication-details">
+            <div class="pub-title">On The Resilience of D2D-based Social Networking Service Against Random Failures</div>
+            <div class="pub-authors">Sigit Pambudi, Wenye Wang, Cliff Wang</div>
+            <div class="pub-venue">Proc. of IEEE GLOBECOM, December 2016</div>
+            <div class="pub-id">[CP-105] <a href="#" class="pdf-link">pdf</a></div>
+          </div>
+        </div> 
+        <div class="publication-row">
+          <div class="publication-details">
+            <div class="pub-title">A Locality-based Mobile Caching Policy for D2D-based Content Sharing Network</div>
+            <div class="pub-authors">Yali Wang, Yujin Li, Wenye Wang, Mei Song</div>
+            <div class="pub-venue">Proc. of IEEE GLOBECOM, December 2016</div>
+            <div class="pub-id">[CP-104] <a href="#" class="pdf-link">pdf</a></div>
+          </div>
+        </div>  
+        <div class="publication-row">
+          <div class="publication-details">
+            <div class="pub-title">Divide and Conquer: Leveraging Topology in Control of Epidemic Information Dynamics</div>
+            <div class="pub-authors">Jie Wang, Wenye Wang, Cliff Wang</div>
+            <div class="pub-venue">Proc. of IEEE GLOBECOM, December 2016</div>
+            <div class="pub-id">[CP-103] <a href="#" class="pdf-link">pdf</a></div>
+          </div>
+        </div> 
+        <div class="publication-row">
+          <div class="publication-details">
+            <div class="pub-title">Dominoes with Communications: On Characterizing the Progress of Cascading Failures in Smart Grid</div>
+            <div class="pub-authors">Mingkui Wei, Wenye Wang</div>
+            <div class="pub-venue">Proc. of IEEE ICC, May 2016</div>
+            <div class="pub-id">[CP-102] <a href="#" class="pdf-link">pdf</a></div>
+          </div>
+        </div> 
+        <div class="publication-row">
+          <div class="publication-details">
+            <div class="pub-title">Modeling and Estimating the Structure of D2D-Based Mobile Social Networks</div>
+            <div class="pub-authors">Sigit Pambudi, Wenye Wang</div>
+            <div class="pub-venue">Proc. of IEEE ICC, May 2016</div>
+            <div class="pub-id">[CP-101] <a href="#" class="pdf-link">pdf</a></div>
+          </div>
+        </div> 
+        <div class="publication-row">
+          <div class="publication-details">
+            <div class="pub-title">How the Anti-Rumor Kills the Rumor: Conflicting Information Propagation in Networks</div>
+            <div class="pub-authors">Jie Wang, Wenye Wang</div>
+            <div class="pub-venue">Proc. of IEEE ICC, May 2016</div>
+            <div class="pub-id">[CP-100] <a href="#" class="pdf-link">pdf</a></div>
+          </div>
+        </div> 
+        <div class="publication-row">
+          <div class="publication-details">
+            <div class="pub-title">To Live or To Die: Encountering Conflict Information Propagation over Simple Networks</div>
+            <div class="pub-authors">Jie Wang, Wenye Wang</div>
+            <div class="pub-venue">Proc. of IEEE INFOCOM, April 2016</div>
+            <div class="pub-id">[CP-99] <a href="#" class="pdf-link">pdf</a></div>
+          </div>
+        </div> 
+
+        <!-- 2015 -->
+        <h2 class="year-header">2015</h2>
+        <div class="publication-row">
+          <div class="publication-details">
+            <div class="pub-title">Safety Can Be Dangerous: Secure Communications Impair Smart Grid Stability Under Emergencies</div>
+            <div class="pub-authors">Mingkui Wei, Wenye Wang</div>
+            <div class="pub-venue">Proc. of IEEE GLOBECOM, December 2015</div>
+            <div class="pub-id">[CP-98] <a href="#" class="pdf-link">pdf</a></div>
+          </div>
+        </div>   
+        <div class="publication-row">
+          <div class="publication-details">
+            <div class="pub-title">Claim What You Need: A Text-Mining Approach on Android Permission Request Authorization</div>
+            <div class="pub-authors">Mingkui Wei, Xi Gong, Wenye Wang</div>
+            <div class="pub-venue">Proc. of IEEE GLOBECOM, December 2015</div>
+            <div class="pub-id">[CP-97] <a href="#" class="pdf-link">pdf</a></div>
+          </div>
+        </div>  
+        <div class="publication-row">
+          <div class="publication-details">
+            <div class="pub-title">On Topology and Resilience of Large-Scale Cognitive Radio Networks Under Generic Failures</div>
+            <div class="pub-authors">Lei Sun, Wenye Wang, Zhuo Lu</div>
+            <div class="pub-venue">IEEE Transactions on Wireless Communications, Vol. 14, No. 6, pp. 3390-3401, June 2015</div>
+            <div class="pub-id">[JP-37] <a href="#">pdf</a></div>
+          </div>
+        </div>
+
+        <!-- 2014 -->
+        <h2 class="year-header">2014</h2>
+        <div class="publication-row">
+          <div class="publication-details">
+            <div class="pub-title">Exploring Device-to-Device Communication for Mobile Cloud Computing</div>
+            <div class="pub-authors">Yujin Li, Lei Sun, Wenye Wang</div>
+            <div class="pub-venue">Proc. of IEEE ICC, June 2014</div>
+            <div class="pub-id">[CP-96] <a href="#" class="pdf-link">pdf</a></div>
+          </div>
+        </div>  
+        <div class="publication-row">
+          <div class="publication-details">
+            <div class="pub-title">Boundary Matters: Impact of Finite Boundary to Packet Delay Performance in Mobile Data Networks</div>
+            <div class="pub-authors">Sigit Aryo Pambudi, Wenye Wang</div>
+            <div class="pub-venue">Proc. of IEEE ICC, June 2014</div>
+            <div class="pub-id">[CP-95] <a href="#" class="pdf-link">pdf</a></div>
+          </div>
+        </div>  
+        <div class="publication-row">
+          <div class="publication-details">
+            <div class="pub-title">Can Mobile Cloudlets Support Mobile Applications</div>
+            <div class="pub-authors">Yujin Li, Wenye Wang</div>
+            <div class="pub-venue">Proc. of IEEE INFOCOM, April 2014</div>
+            <div class="pub-id">[CP-94] <a href="#" class="pdf-link">pdf</a></div>
+          </div>
+        </div>  
+        <div class="publication-row">
+          <div class="publication-details">
+            <div class="pub-title">Greenbench: A Benchmark for Observing Power Grid Vulnerability Under Data-Centric Threats</div>
+            <div class="pub-authors">Mingkui Wei, Wenye Wang</div>
+            <div class="pub-venue">Proc. of IEEE INFOCOM, April 2014</div>
+            <div class="pub-id">[CP-93] <a href="#" class="pdf-link">pdf</a></div>
+          </div>
+        </div>  
+        <div class="publication-row">
+          <div class="publication-details">
+            <div class="pub-title">How Can Botnets Cause Storms? Understanding the Evolution and Impact of Mobile Botnets</div>
+            <div class="pub-authors">Zhuo Lu, Wenye Wang, Cliff Wang</div>
+            <div class="pub-venue">Proc. of IEEE INFOCOM, April 2014</div>
+            <div class="pub-id">[CP-92] <a href="#" class="pdf-link">pdf</a></div>
+          </div>
+        </div>  
+        <div class="publication-row">
+          <div class="publication-details">
+            <div class="pub-title">Camouflage Traffic: Minimizing Message Delay for Smart Grid Applications under Jamming</div>
+            <div class="pub-authors">Zhuo Lu, Wenye Wang, Cliff Wang</div>
+            <div class="pub-venue">IEEE Transactions on Dependable and Secure Communications (TDSC), Vol. 12, No. 1, pp. 31-44, January 2015</div>
+            <div class="pub-id">[JP-36]</div>
+          </div>
+        </div>
+
+        <!-- 2013 -->
+        <h2 class="year-header">2013</h2>
+        <div class="publication-row">
+          <div class="publication-details">
+            <div class="pub-title">Toward Distributed Intelligent: A Case Study of Peer to Peer Communication in Smart Grid</div>
+            <div class="pub-authors">Mingkui Wei, Wenye Wang</div>
+            <div class="pub-venue">Proc. of IEEE GLOBECOM, December 2013</div>
+            <div class="pub-id">[CP-91] <a href="#" class="pdf-link">pdf</a></div>
+          </div>
+        </div>          
+        <div class="publication-row">
+          <div class="publication-details">
+            <div class="pub-title">Understanding Topology Dynamics in Large-Scale Cognitive Radio Networks under Generic Failures</div>
+            <div class="pub-authors">Lei Sun, Wenye Wang</div>
+            <div class="pub-venue">Proc. of IEEE GLOBECOM, December 2013</div>
+            <div class="pub-id">[CP-90] <a href="#" class="pdf-link">pdf</a></div>
+          </div>
+        </div>          
+        <div class="publication-row">
+          <div class="publication-details">
+            <div class="pub-title">The Unheralded Power of Cloudlet Computing in the Vicinity of Mobile Devices</div>
+            <div class="pub-authors">Yujin Li, Wenye Wang</div>
+            <div class="pub-venue">Proc. of IEEE GLOBECOM, December 2013</div>
+            <div class="pub-id">[CP-89] <a href="#" class="pdf-link">pdf</a></div>
+          </div>
+        </div>          
+        <div class="publication-row">
+          <div class="publication-details">
+            <div class="pub-title">Domino of the Smart Grid: An Empirical Study of System Behaviors in the Interdependent Network Architecture</div>
+            <div class="pub-authors">Xiang Lu, Wenye Wang, Jianfeng Ma, Limin Sun</div>
+            <div class="pub-venue">Proc. of IEEE SmartGridComm, pp. 1-6, October 2013</div>
+            <div class="pub-id">[CP-88] <a href="#" class="pdf-link">pdf</a></div>
+          </div>
+        </div>          
+        <div class="publication-row">
+          <div class="publication-details">
+            <div class="pub-title">Understanding Blackholes in Large-Scale Cognitive Radio Networks Under Generic Failures</div>
+            <div class="pub-authors">Lei Sun, Wenye Wang</div>
+            <div class="pub-venue">Proc. of IEEE INFOCOM, April 2013</div>
+            <div class="pub-id">[CP-87] <a href="#" class="pdf-link">pdf</a></div>
+          </div>
+        </div>          
+        <div class="publication-row">
+          <div class="publication-details">
+            <div class="pub-title">Horizon on the Move: Geocast in Intermittently Connected Vehicular Ad Hoc Networks</div>
+            <div class="pub-authors">Yujin Li, Wenye Wang</div>
+            <div class="pub-venue">Proc. of IEEE INFOCOM, April 2013</div>
+            <div class="pub-id">[CP-86] <a href="#" class="pdf-link">pdf</a></div>
+          </div>
+        </div>          
+        <div class="publication-row">
+          <div class="publication-details">
+            <div class="pub-title">Inter-Node Mobility Correlation for Group Detection and Analysis in VANETs</div>
+            <div class="pub-authors">Yujin Li, Wenye Wang</div>
+            <div class="pub-venue">IEEE Transactions on Vehicular Technology, Vol. 62, No. 9, pp 4590-4601, November 2013</div>
+            <div class="pub-id">[JP-32] <a href="#" class="pdf-link">pdf</a></div>
+          </div>
+        </div>          
+        <div class="publication-row">
+          <div class="publication-details">
+            <div class="pub-title">Wireless in Smart Grid: Modeling and Analysis for Time Critical Communications</div>
+            <div class="pub-authors">Yi Xu, Wenye Wang</div>
+            <div class="pub-venue">IEEE Transactions on Wireless Communications, Vol. 12, No. 7, pp. 3360-3371, July 2013</div>
+            <div class="pub-id">[JP-33] <a href="#" class="pdf-link">pdf</a></div>
+          </div>
+        </div>          
+        <div class="publication-row">
+          <div class="publication-details">
+            <div class="pub-title">Scheduling Partition for Order Optimal Capacity in Large-Scale Wireless Networks</div>
+            <div class="pub-authors">Yi Xu, Wenye Wang</div>
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[CP-55] Avesh K. Agarwal and Wenye Wang, "Performance Sensitivities of Wireless Mesh Networks Under Path-based DoS Attacks," in <em>Proc. of IEEE GLOBECOM</em>, November 2009. (<a href="#">pdf</a>)</p>
+          </div>
+        </div> 
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[CP-54] Yi Xu and Wenye Wang, "Scheduling Partitioning for Order Optimal Capacity in Large-Scale Wireelss Networks," in <em>Proc. of ACM Mobicom 2009</em>, September 2009. (<a href="#">pdf</a>)</p>
+          </div>
+        </div> 
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[CP-53] Ming Zhao, Levi Mason, and Wenye Wang, "Empirical Study on Human Mobility for Wireless Mobile Networks," in <em>Proc. of IEEE Military Communication Conference (Milcom)</em>, November 2008 (published 2009). (<a href="#">pdf</a>)</p>
+          </div>
+        </div>
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[JP-22] Avesh K. Agarwal and Wenye Wang, “An Experimental Study of the Performance Impact of Path-based DoS Attacks in Wireless Mesh Networks,” <em>ACM-Springer Mobile Networks and Applications (MONET) Journal</em>, Vol. 15, Issue 5, pp. 693-709, August 2010. (<a href="#">pdf</a>)</p>
+          </div>
+        </div>        
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[JP-21] Fei Xing and Wenye Wang, “On the Survivability of Wireless Ad Hoc Networks with Node Misbehaviors and Failures,” <em>IEEE Transactions on Dependable and Secure Computing</em>, Vol. 7, No.3, pp. 284-299, July-September 2010. (<a href="#">pdf</a>)</p>
+          </div>
+        </div>
+
+        <!-- 2008 -->
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[CP-52] Fei Xing and Wenye Wang, "On the Critical Phase Transition Time of Wireless Multi-hop Networks with Random Failures," in <em>Proc. of ACM Mobicom 2008</em>, September 2008. (<a href="#">pdf</a>)</p>
+          </div>
+        </div>  
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[CP-51] Yi Xu and Wenye Wang, "Finding the Fastest Path in Wireless Networks," in <em>Proc. of IEEE ICC'2008</em>, May 2008. (<a href="#">pdf</a>)</p>
+          </div>
+        </div>  
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[CP-50] Fei Xing and Wenye Wang, "On the Devolution of Large-scale Sensor Networks in the Presence of Random Failures," in <em>Proc. of IEEE ICC'2008</em>, May 2008. (<a href="#">pdf</a>)</p>
+          </div>
+        </div>  
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[CP-49] Yi Xu and Wenye Wang, "The Speed of Information Propagation in Large Wireless Networks," in <em>Proc. of IEEE INFOCOM 2008</em>, April 2008. (<a href="#">pdf</a>)</p>
+          </div>
+        </div>  
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[CP-48] Wenye Wang and Ming Zhao, "Joint Effects of Radio Channels and Node Mobility on Link Dynamics in Wireless Networks," in <em>Proc. of IEEE INFOCOM 2008</em>, April 2008. (<a href="#">pdf</a>)</p>
+          </div>
+        </div>  
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[CP-47] Nurcan Tezcan and Wenye Wang, "Self-Orienting Wireless Multimedia Sensor Networks for Maximizing Multimedia Coverage," in <em>Proc. of IEEE ICC'2008</em>, May 2008. (<a href="#">pdf</a>)</p>
+          </div>
+        </div>  
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[JP-19] Yi Xu and Wenye Wang, “Topology Stability Analysis and its Application in Hierarchical Mobile Ad Hoc Networks,” <em>IEEE Transactions on Vehicular Technology</em>, Vol.58, No. 3, pp 1546-1560, March 2009. (<a href="#">pdf</a>)</p>
+          </div>
+        </div>  
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[JP-18] Mingkui Wei and Wenye Wang, “A Unified Mobility Model for Analysis and Simulation of Mobile Wireless Networks,” <em>ACM-Springer Wireless Networks (WINET)</em>, Vol 15, No. 3, pp 365-389, April 2009. (<a href="#">pdf</a>)</p>
+          </div>
+        </div>  
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[JP-20] Nurcan Tezcan and Wenye Wang, “Self-Orienting Wireless Multimedia Sensor Networks for Occlusion-Free Viewpoints,” <em>Computer Networks</em>, Vol. 52, Issue 14, pp.2558-2567, May 2008. (<a href="#">pdf</a>)</p>
+          </div>
+        </div>
+
+        <!-- 2007 -->
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[CP-46] Avesh K. Agarwal, Wenye Wang, Rachana Gupta, and Mo-Yuen Chow, "LAP: Link-Aware Protection for Improving Performance of Loss and Delay Sensitive Applications in Wireless LANs," in <em>Proc. of IEEE Military Communication Conference (Milcom'07)</em>, October 2007. (<a href="#">pdf</a>)</p>
+          </div>
+        </div> 
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[CP-45] Yi Xu and Wenye Wang, "Detecting and Mitigating DoS Attacks in Wireless Networks without Affecting the Normal Behaving Nodes," in <em>Proc. of IEEE Military Communication Conference (Milcom'07)</em>, October 2007. (<a href="#">pdf</a>)</p>
+          </div>
+        </div> 
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[CP-44] Rachana Gupta, Mo-Yuen Chow, Avesh K. Agarwal, and Wenye Wang, "Performance Assessment of Data and Time-Sensitive Wireless Distributed Networked-control-Systems in Presence of Information Security," in <em>IEEE Military Communication Conference (Milcom'07)</em>, October 2007.</p>
+          </div>
+        </div> 
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[CP-43] Rachana Gupta, Avesh K. Agarwal, Wenye Wang, Mo-Yuen Chow, "Information security with real-time operation: performance assessment for next generation wireless distributed networked-control-systems," in <em>33rd Annual Conference IEEE Industrial Electronics Society</em>, 2007.</p>
+          </div>
+        </div> 
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[CP-42] Yi Xu and Wenye Wang, "Stability of Hierarchical Mobile Ad Hoc Networks," in <em>Proc. of IEEE GLOBECOM</em>, November 2007. (<a href="#">pdf</a>)</p>
+          </div>
+        </div> 
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[CP-41] Ming Zhao and Wenye Wang, "The Impacts of Radio Channels and Node Mobility on Link Statistics in Mobile Ad Hoc Networks," in <em>Proc. of IEEE GLOBECOM</em>, November 2007. (<a href="#">pdf</a>)</p>
+          </div>
+        </div> 
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[CP-40] Fei Xing and Wenye Wang, "On the Expected Connection Lifetime and Stochastic Resilience of Wireless Multihop Networks," in <em>Proc. of IEEE GLOBECOM</em>, November 2007. (<a href="#">pdf</a>)</p>
+          </div>
+        </div> 
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[CP-39] Sherry Wang, Harold Zheng, and Wenye Wang, "Efficient Security Management in Ad Hoc Networks," in <em>Proc. of IEEE GLOBECOM</em>, November 2007.</p>
+          </div>
+        </div> 
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[CP-38] Rachana Gupta, Avesh K. Agarwal, Wenye Wang, Mo-Yuen Chow, "Characterization of data-sensitive wireless distributed networked-control-systems," in <em>IEEE/ASME International Conference on Advanced Intelligent Mechatronics</em>, September 2007.</p>
+          </div>
+        </div> 
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[CP-37] Fei Xing and Wenye Wang, "On the Resilient Overlay Topology Formation in Multi-hop Wireless Networks," in <em>Proc. of IFIP Networking 2007</em>, May 2007. (<a href="#">pdf</a>)</p>
+          </div>
+        </div> 
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[CP-36] Fei Xing and Wenye wang, "Analyzing Resilience to Node Misbehaviors in Wireless Multihop Networks," in <em>Proc. of IEEE WCNC</em>, March 2007. (<a href="#">pdf</a>)</p>
+          </div>
+        </div> 
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[CP-35] Ming Zhao and Wenye Wang, "Analyzing Topology Dynamics in Ad Hoc Networks Using a Smooth Mobility Model," in <em>Proc. of IEEE WCNC</em>, March 2007. (<a href="#">pdf</a>)</p>
+          </div>
+        </div> 
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[CP-34] Nurcan Tezcan and Wenye Wang, "Effective Coverage and connectivity Preserving in Heterogeneous Sensor Networks," in <em>Proc. of IEEE WCNC</em>, March 2007. (<a href="#">pdf</a>)</p>
+          </div>
+        </div> 
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[CP-33] Nurcan Tezcan and Wenye Wang, "Distributed Coordination of Sensors for End-to-End Reliable Event and Query Delivery," in <em>Proc. of IEEE WCNC</em>, March 2007. (<a href="#">pdf</a>)</p>
+          </div>
+        </div> 
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[CP-32] Shawqi Kharbash and Wenye Wang, "Computing Two-Terminal Reliability in Mobile Ad hoc Networks," in <em>Proc. of IEEE WCNC</em>, March 2007. (<a href="#">pdf</a>)</p>
+          </div>
+        </div> 
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[JP-17] Xinbing Wang, Do Young Eun, and Wenye Wang, “A Dynamic TCP-Aware Call Admission Control Scheme for Next Generation Wireless Communications,” <em>IEEE Transactions on Wireless Communications</em>, Vol. 6, No. 9, pp 3344-3352, September 2007. (<a href="#">pdf</a>)</p>
+          </div>
+        </div> 
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[JP-16] Avesh K. Agarwal and Wenye Wang, “On the Impact of Quality of Protection in Wireless Local Area Networks with IP Mobility,” <em>ACM-Springer Mobile Networks and Applications (MONET) Journal</em>, Vol. 12, pp. 93-110, February 2007. (<a href="#">pdf</a>)</p>
+          </div>
+        </div> 
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[JP-15] Nurcan Tezcan and Wenye Wang, “ART: An Asymmetric and Reliable Transport Mechanism for Wireless Sensor Networks,” <em>International Journal of Sensor Networks (JSNet)</em>, Vol.2, No. 3/4, pp. 188-200, February 2007. (<a href="#">pdf</a>)</p>
+          </div>
+        </div>
+
+        <!-- 2006 -->
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[JP-12] Wenye Wang and Guoliang Xue, “A Cost-Minimization Algorithm for Fast Location Tracking in Mobile Wireless Networks,” <em>Computer Networks</em>, Vol 50, Issue 15, pp 2713-2726, October 2006. (<a href="#">pdf</a>)</p>
+          </div>
+        </div> 
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[JP-13] Jungkee Song and Wenye Wang, “A Simulation Study of IP-Based Vertical Handoff in Wireless Convergent Networks,” <em>Wireless Communications and Mobile Computing (WCMC)</em>, Vol 6, No. 5, pp 629-650, July 2006. (<a href="#">pdf</a>)</p>
+          </div>
+        </div>  
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[JP-14] Nurcan Tezcan and Wenye Wang, “TTS: A Two-Tiered Scheduling Mechanism for Energy Conservation in Wireless Sensor Networks,” <em>International Journal of Sensor Networks (JSNet)</em>, Vol.1, No. 3/4, pp. 213-228, November 2006. (<a href="#">pdf</a>)</p>
+          </div>
+        </div> 
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[CP-31] Ming Zhao and Wenye Wang, "A Novel Semi-Markov Smooth Mobility Model for Mobile Ad Hoc Networks," in <em>Proc. of IEEE GLOBECOM'06</em>, November 2006 (Best Student Paper Award). (<a href="#">pdf</a>)</p>
+          </div>
+        </div> 
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[CP-30] Yi Xu and Wenye Wang, "MEACA: Mobility and Energy Aware Clustering Algorithm for Constructing Stable MANETs," in <em>Proc. of IEEE Milcom'06</em>, October 2006. (<a href="#">pdf</a>)</p>
+          </div>
+        </div> 
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[CP-29] Avesh K. Agarwal and Wenye Wang, "DSPM: Dynamic Security Policy Management for Optimizing Performance in Wireless Networks," in <em>Proc. of IEEE Milcom'06</em>, October 2006. (<a href="#">pdf</a>)</p>
+          </div>
+        </div> 
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[CP-28] Fei Xing and Wenye Wang, "Understanding Dynamic Denial of Service Attacks in Mobile Ad Hoc Networks," in <em>Proc. of IEEE Milcom'06</em>, October 2006. (<a href="#">pdf</a>)</p>
+          </div>
+        </div>
+
+        <!-- 2005 -->
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[JP-11] Wenye Wang, Xinbing Wang, and Arne Nilsson, “Energy-Efficient Bandwidth Allocation in Wireless Networks: Algorithms, Analysis, and Simulation,” <em>IEEE Transactions on Wireless Communications</em>, Vol 5, no. 4, pp 1-12, April 2006. (<a href="#">pdf</a>)</p>
+          </div>
+        </div>         
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[JP-10] Janise McNair, Tuna Tugcu, Wenye Wang, and Jiang Xie, “A Survey of Cross-Layer Performance Enhancements for Mobile IP Networks,” <em>Computer Networks</em>, Volume 49, Issue 2, pp119-146, October 2005. (<a href="#">pdf</a>)</p>
+          </div>
+        </div>         
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[JP-09] Wenye Wang, Wei Liang, and Avesh K. Agarwal, “Integration of Authentication and Mobility Management in Third Generation and WLAN Data Networks,” <em>Wireless Communications and Mobile Computing (WCMC)</em>, Volume 5, Issue 6, pp 665-678, September 2005. (<a href="#">pdf</a>)</p>
+          </div>
+        </div>         
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[JP-08] Wei Liang and Wenye Wang, “On Performance Analysis of Challenge/Response Based Authentication in Wireless Local Area Networks,” <em>Computer Networks (Elsevier)</em>, Vol. 48, No. 2, pp 267-288, June 2005. (<a href="#">pdf</a>)</p>
+          </div>
+        </div>         
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[CP-26] Xinbing Wang, Do Young Eun, and Wenye Wang, "A TCP-Aware Call Admission Control Scheme for Packet-Switched Wireless Networks," in <em>Proc. of IEEE IPCCC</em>, April 2006. (<a href="#">pdf</a>)</p>
+          </div>
+        </div>         
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[CP-25] Fei Xing and Wenye Wang, "Modeling and Analysis of Connectivity in Mobile Ad Hoc Networks with Misbehaving Nodes," in <em>Proc. of IEEE ICC 2006</em>, January 2006. (<a href="#">pdf</a>)</p>
+          </div>
+        </div>         
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[CP-24] Nurcan Tezcan and Wenye Wang, "TTS: A Two-Tiered Scheduling Algorithm for Wireless Sensor Networks," in <em>Proc. of IEEE ICC 2006</em>, January 2006. (<a href="#">pdf</a>)</p>
+          </div>
+        </div>         
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[CP-23] Avesh Agarwal, Wenye Wang, Janise Y. McNair, "An Experimental Study of Cross-Layer Security Protocols in Public Access Wireless Networks," in <em>Proc. of IEEE GLOBECOM'05</em>, November 2005. (<a href="#">pdf</a>)</p>
+          </div>
+        </div>         
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[CP-22] Nurcan Tezcan, Wenye Wang, and Mo-Yuen Chow, "A Bidirectional Transport Mechanism in Wireless Sensor Networks," in <em>Proc. of IEEE MILCOM'05</em>, October 2005. (<a href="#">pdf</a>)</p>
+          </div>
+        </div>         
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[CP-21] Nurcan Tezcan and Wenye Wang, "A Lightweight Classification Algorithm for Energy Conservation in Wireless Sensor Networks," in <em>Proc. of ICCCN'05</em>, October 2005, pp. 87-92. (<a href="#">pdf</a>)</p>
+          </div>
+        </div>         
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[CP-20] Avesh Agarwal and Wenye Wang, "Statistical Analysis of the Impact of Routing in MANET Based on Real-Time Measurements," in <em>Proc. of ICCCN'05</em>, October 2005 (Nominated for Best Student Paper Award). (<a href="#">pdf</a>)</p>
+          </div>
+        </div>         
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[CP-19] Avesh K. Agarwal and Wenye Wang, "Measuring Performance Impact of Security Protocols in Wireless Local Area Networks," in <em>Proc. of IEEE BroadNets-- Broadband Wireless Networking Symposium</em>, October 2005. (<a href="#">pdf</a>)</p>
+          </div>
+        </div>         
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[CP-18] Wei Liang and Wenye Wang, "A Quantitative Study of Authentication and QoS in Wireless IP Networks," in <em>Proc. of IEEE INFOCOM'05</em>, March 2005. (<a href="#">pdf</a>)</p>
+          </div>
+        </div>         
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[CP-17] Wenye Wang, Xinbing Wang, and Arne Nilsson, "A New Admission Control Scheme under Energy and QoS Constraints for Wireless Networks," in <em>Proc. of IEEE INFOCOM'05</em>, March 2005. (<a href="#">pdf</a>)</p>
+          </div>
+        </div>         
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[JP-07] Ian F. Akyildiz and Wenye Wang, “The Predictive User Mobility Profile Framework for Wireless Multimedia Networks,” <em>IEEE/ACM Transactions on Networking</em>, Vol. 12, no. 6, pp. 1021-1035, December 2004. (<a href="#">pdf</a>)</p>
+          </div>
+        </div>         
+
+        <!-- 2004 -->
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[CP-16] Wei Liang and Wenye Wang, "A Dynamic Security Association Control Scheme for Efficient Authentication in Wireless Networks," in <em>Proc. of IEEE GLOBECOM'04</em>, November 2004. (<a href="#">pdf</a>)</p>
+          </div>
+        </div>     
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[CP-15] Xinbing Wang and Wenye Wang, "Energy-Aware Call Admission Control Scheme in Wireless Cellular Networks," in <em>Proc. of IEEE GLOBECOM'04</em>, November 2004. (<a href="#">pdf</a>)</p>
+          </div>
+        </div>     
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[CP-14] Wei Liang and Wenye Wang, "A Lightweight Authentication Protocol with Local Security Association Control in Mobile Networks," in <em>Proc. of IEEE MILCOM'04</em>, October 2004. (<a href="#">pdf</a>)</p>
+          </div>
+        </div>     
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[CP-13] Avesh Agarwal, Jorinjit S. Gill, and Wenye Wang, "Experimental Study of Wireless Security Protocols over Mobile IP Network," in <em>Proc. of IEEE VTC Fall 2004</em>, September 2004. (<a href="#">pdf</a>)</p>
+          </div>
+        </div>     
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[CP-12] Wei Liang and Wenye Wang, "An Analytical Study on the Impact of Authentication in Wireless Local Area Networks," in <em>Proc. of the 13th IEEE ICCCN'04</em>, October 2004 (Best Student Paper Award). (<a href="#">pdf</a>)</p>
+          </div>
+        </div>     
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[CP-11] Wei Liang and Wenye Wang, "A Local Authentication Control Scheme Based on AAA Architecture in Wireless Networks," in <em>Proc. of IEEE VTC Fall 2004</em>, September 2004. (<a href="#">pdf</a>)</p>
+          </div>
+        </div>     
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[CP-10] Wei Liang and Wenye Wang, "A Security Association Management Scheme for Efficient Authentication in Wireless Networks," in <em>Proc. of World Wireless Congress 2004 (WWC04)</em>, May 2004.</p>
+          </div>
+        </div>     
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[JP-06] Ian F. Akyildiz and Wenye Wang, “A Dynamic Location Management Scheme for Next Generation Multi-Tier PCS Systems,” <em>IEEE Transactions on Wireless Communications</em>, Vol. 1, No. 1, pp. 178-189, January 2002.</p>
+          </div>
+        </div>
+
+        <!-- 2002 / 2001 / 2000 / 1999 / 1998 -->
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[JP-05] Wenye Wang and Ian F. Akyildiz, “A New Signaling Protocol for Intersystem Roaming in Next-Generation Wireless Systems,” <em>IEEE Journal on Selected Areas in Communications (JSAC)</em>, Vol. 19, No. 10, pp. 2040-2052, October 2001. (<a href="#">pdf</a>)</p>
+          </div>
+        </div>    
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[JP-04] Wenye Wang, Ian F. Akyildiz, Gordon L. Stuber, and Boo-Young Chung, “Effective Paging Schemes with Delay Bounds as QoS Constraints in Wireless Systems,” <em>ACM-Kluwer Wireless Networks (WINET) Journal</em>, Vol. 7, No. 5, pp. 455-466, September 2001. (<a href="#">pdf</a>)</p>
+          </div>
+        </div>    
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[JP-03] Wenye Wang, Ian F. Akyildiz, and Gordon L. Stuber, “An Optimal Partition Algorithm for Minimization of Paging Costs,” <em>IEEE Communications Letters</em>, Vol. 5, No. 2, pp. 42-45, February 2001. (<a href="#">pdf</a>)</p>
+          </div>
+        </div>     
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[JP-02] Ian F. Akyildiz, Janise McNair, Joseph Ho, Huseyin Uzunalioglu, and Wenye Wang, “Mobility Management for Next Generation Wireless Systems,” <em>Proceedings of the IEEE</em>, Vol. 87, No. 8, pp. 1347-1384, August 1999. (Nominated for Donald Fink Prize)</p>
+          </div>
+        </div>     
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[JP-01] Ian F. Akyildiz, Janise McNair, Joseph Ho, Huseyin Uzunalioglu, and Wenye Wang, “Mobility Management in Current and Future Communication Networks,” <em>IEEE Network Magazine</em>, Vol. 12, No. 8, pp. 39-49, July/August 1998.</p>
+          </div>
+        </div>     
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[CP-09] Wenye Wang and Ian F. Akyildiz, "Location Management in 3G/4G Wireless Systems," <em>SPIE ITCom Conference</em>, Denver, August 2001.</p>
+          </div>
+        </div>     
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[CP-08] Wenye Wang and Ian F. Akyildiz, "On the Estimation of User Mobility Pattern for Location Tracking in Wireless Networks," in <em>Proc. of IEEE GLOBECOM02</em>, November 2002. (<a href="#">pdf</a>)</p>
+          </div>
+        </div>     
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[CP-07] Wenye Wang and Ian F. Akyildiz, "A Cost Efficient Signaling Protocol for Mobility Application Part (MAP) in IMT 2000 Systems," in <em>Proc. of ACM/IEEE MobiCom'01</em>, Rome, Italy, July 2001, pp. 345-356.</p>
+          </div>
+        </div>     
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[CP-06] Ian F. Akyildiz, Wenye Wang, and Young-Jun Lee, "Location Management in 3G/4G Wireless Systems," in <em>Proc. of SPIE ITCom</em>, August 2001.</p>
+          </div>
+        </div>     
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[CP-05] Wenye Wang and Ian F. Akyildiz, "Intersystem Location Update and Paging Schemes for Multitier Wireless Networks," in <em>Proc. of ACM/IEEE MobiCom 2000</em>, Boston, August 2000, pp. 99-109. (<a href="#">pdf</a>)</p>
+          </div>
+        </div>     
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[CP-04] Wenye Wang, Ian F. Akyildiz, and Gordon L. Stuber, "An Optimal Partition Algorithm for Minimization of Paging Costs," in <em>Proc. of IEEE GLOBECOM 2000</em>, Vol. 1, pp. 188-192, San Francisco, November 2000. (<a href="#">pdf</a>)</p>
+          </div>
+        </div>     
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[CP-03] Wenye Wang, Ian. F Akyildiz, and Gordon L. Stuber, "A Cost Effective Paging Scheme for IMT-2000 Systems," in <em>Proc. of IEEE VTC 2000</em>, Vol. 3, pp. 1424-1430, Boston, September 2000. (<a href="#">pdf</a>)</p>
+          </div>
+        </div>     
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[CP-02] Wenye Wang, Ian F. Akyildiz, and Gordon L. Stuber, "Reducing the Paging Costs under Delay Bounds for PCS Networks," in <em>Proc. of IEEE WCNC'2000</em>, Vol. 1, pp. 253-257, Chicago, September 2000. (<a href="#">pdf</a>)</p>
+          </div>
+        </div>     
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[CP-01] Wenye Wang, Ian F. Akyildiz, and Gordon L. Stuber, "Effective Paging Schemes with Delay Bounds as QoS Constraints in Wireless Systems," <em>IEEE WCNC'2000</em>, Chicago, September 2000. (Earlier version of JP-04)</p>
+          </div>
+        </div>
+
+        <!-- Book Chapters -->
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[BC-6] Avesh K. Agarwal and Wenye Wang, "An Experimental Study on Security Protocols in WLANs," in Y. Xiao, X. Shen, and D.-Z. Du, <em>Wireless Network Security</em>, Springer, ISBN: 0387280405, 2006.</p>
+          </div>
+        </div>     
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[BC-5] Wenye Wang, Wei Liang, and Avesh K. Agarwal, "The Effects of Authentication Mechanisms on Quality of Service in Mobile Wireless Networks," in Y. Zhang, H. Hu, and M. Fujise, <em>Resource, Mobility and Security Management in Wireless Networks and Mobile Communications</em>, Auerbach Publications, CRC Press, 2006.</p>
+          </div>
+        </div>     
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[BC-4] Wenye Wang, Janise Y. McNair, and Jiang (Linda) Xie, "Location Management and Mobility Modeling in Wireless Systems," in Mehdi Khosrow-Pour, <em>Encyclopedia of E-Commerce, E-Government and Mobile Commerce</em>, Idea-Group, 2006.</p>
+          </div>
+        </div>     
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[BC-3] Wenye Wang, Janise Y. McNair, and Jiang (Linda) Xie, "Authentication and Security Protocols for Ubiquitous Wireless Networks," in Thanos A. Vasilakos and Witold Pedrycz, <em>Ambient Intelligence, Wireless Networking, Ubiquitous Computing</em>, Artech House, July 2005.</p>
+          </div>
+        </div>     
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[BC-2] Wenye Wang, "Modeling and Management of Location and Mobility," in D. Katsaros, A. Nanopoulos and Y. Manalopoulos, <em>Wireless Information Highways</em>, Chapter VI, Hershey, USA: IRM Press, 2005.</p>
+          </div>
+        </div>     
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[BC-1] Wenye Wang, "Authentication for Inter-Domain Roaming in Wireless IP Networks," in Panand Xiao, <em>Design and Analysis of Wireless Networks</em>, Vol. 2, NOVA Science Publisher, ISBN: 1-59454-186-8, Hardbound, 2004.</p>
+          </div>
+        </div>
+
+        <!-- Thesis and Technical Reports -->
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[PHD-jw-19] Jie Wang, "Modeling and Analysis of Mobile Data Dynamics in Heterogeneous Wireless Networks," PhD Dissertation, Computer Engineering, October 2019.</p>
+          </div>
+        </div>        
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[MS-xf-13] Xiaozhou Fang, "Neighbor Graph Based Proactive Caching for Seamless Handover in Content-Centric Network," MS Thesis, Computer Engineering, October, 2013.</p>
+          </div>
+        </div>        
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[PHD-sqq-13] Shawqi Q. Karbash, "Modeling and Analysis of Wireless Network Reliability," PhD Dissertation, Computer Engineering, May, 2013.</p>
+          </div>
+        </div>        
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[PHD-zl-13] Zhuo Lu, "Modeling and Evaluating the Impact of Denial-of-Service Attacks in Emerging Wireless and Mobile Applications," PhD Dissertation, Computer Engineering, May, 2013.</p>
+          </div>
+        </div>        
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[MS-mbs-13] Mohit B. Shah, "End to End Communication Architecture and Technology Performance Evaluation: Ethernet and WiFi for Substation Automation Networks," MS Thesis, Computer Engineering, Mar, 2013.</p>
+          </div>
+        </div>        
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[PhD-ls-12] Lei Sun, "Understanding the Performance and Topology of Multi-Hop Wireless Cognitive Radio Networks," PhD Dissertation, Computer Engineering, April, 2013.</p>
+          </div>
+        </div>        
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[PhD-yx-10] Yi Xu, "Understanding the Performance and Resilience of Large-Scale Multi-Hop Wireless Networks," PhD Dissertation, Computer Engineering, April, 2010.</p>
+          </div>
+        </div>        
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[MS-mk-09] Mohit Khanna, "Communication Challenges for the FREEDM System," MS Thesis, Electrical Engineering, August, 2009.</p>
+          </div>
+        </div>        
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[PhD-mz-09] Ming Zhao, "Design, Modeling, and Analysis of User Mobility and Its Impact on Multi-Hop Wireless Networks," PhD Dissertation, Computer Engineering, April, 2009.</p>
+          </div>
+        </div>        
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[PhD-aka-09] Avesh K. Agarwal, "Performance and Protection Management in Wireless Networks," PhD Dissertation, Computer Science, April, 2009.</p>
+          </div>
+        </div>        
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[PhD-fx-08] Fei Xing, "Modeling, Design, and Analysis on the Resilience of Large-scale Wireless Multi-hop Networks," PhD Dissertation, Computer Engineering, November, 2008.</p>
+          </div>
+        </div>        
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[PhD-nt-08] Nurcan Tezcan, "Energy-Efficient And Reliable Data Transfer in Wireless Sensor Networks," PhD Dissertation, Computer Engineering, September, 2008.</p>
+          </div>
+        </div>        
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[MS-hx-05] Heng Xia, "Effects of Medium Access Control on the Capacity of Mobile Ad Hoc Networks," MS Thesis, Electrical Engineering, August, 2005.</p>
+          </div>
+        </div>        
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[PhD-wl-05] Wei Liang, "Design and Analysis of Authentication Mechanisms in Single- and Multi-Hop Wireless Networks," PhD Dissertation, Electrical Engineering, August, 2005.</p>
+          </div>
+        </div>        
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[MS-jks-05] Jung Kee Song, "Performance Evaluation of Handoff between UMTS/802.11b based on Mobile IP and Stream Control Transmission Protocol," MS Thesis, Computer Science, May, 2005.</p>
+          </div>
+        </div>        
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[TR-01-05] Ming Zhao and Wenye Wang, "Semi-Markov Mobility Model for Mobile Wireless Networks," Technical Report, TR01-NeTWIS-05, May, 2005.</p>
+          </div>
+        </div>        
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[TR-03-04] Nurcan Tezcan and Wenye Wang, "ART:Asymmetric Reliable Transport Mechanism for Wireless Sensor Networks," Technical Report, TR03-NeTWIS-04, December, 2004.</p>
+          </div>
+        </div>        
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[TR-02-04] Avesh K. Agarwal and Jorinjit S. Gill, "An Experimental Study of Cross-Layer Wireless Security in Public Access Wireless Networks," Technical Report, TR02-NeTWIS-04, May, 2004.</p>
+          </div>
+        </div>        
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[TR-01-04] Wei Liang and Wenye Wang, "Authentication and Service Management in Heterogeneous Mobile Environments," Technical Report, TR01-NeTWIS-04, May, 2004.</p>
+          </div>
+        </div>        
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[TR-02-03] Cheolho Lee and Wenye Wang, "Dynamic End-to-End Call Admission Control for Multi-Layer QoS Constraints in Wireless Networks," Technical Report, TR02-NeTWIS-03, May, 2003.</p>
+          </div>
+        </div>        
+        <div class="publication-row">
+          <div class="publication-details">
+            <p>[TR-01-03] Suresh. V. Subramanian, "The Overview of MPLS & IP Multicasting," Technical Report, TR01-NeTWIS-03, May, 2003.</p>
+          </div>
+        </div>
+
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2025 NetWIS Lab. All Rights Reserved.</p>
+    </footer>
+  </div>
+  <script>
+    // 页面加载后，将每个论文详情的原始内容保存到 data-original 属性中
+    document.addEventListener("DOMContentLoaded", function(){
+      var detailsList = document.querySelectorAll(".publication-details");
+      detailsList.forEach(function(detail) {
+        if (!detail.hasAttribute("data-original")) {
+          detail.setAttribute("data-original", detail.innerHTML);
+        }
+      });
+    });
+
+    // 用于转义正则表达式中的特殊字符
+    function escapeRegExp(string) {
+      return string.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
+    }
+
+    // 帮助函数，安全地高亮文本而不破坏HTML结构
+    function highlightTextWithoutHTML(html, searchText) {
+      if (!searchText.trim()) return html;
+      
+      // 创建临时DOM元素
+      var tempDiv = document.createElement('div');
+      tempDiv.innerHTML = html;
+      
+      // 递归处理所有文本节点
+      function processNode(node) {
+        if (node.nodeType === 3) { // 文本节点
+          var text = node.nodeValue;
+          var regex = new RegExp(escapeRegExp(searchText), 'gi');
+          if (regex.test(text)) {
+            var spanNode = document.createElement('span');
+            spanNode.className = 'highlight';
+            
+            // 将匹配文本放入高亮span，保留其他部分
+            var parts = text.split(regex);
+            var matches = text.match(regex);
+            
+            if (parts.length > 0) {
+              spanNode.appendChild(document.createTextNode(parts[0]));
+              node.parentNode.insertBefore(document.createTextNode(parts[0]), node);
+              
+              for (var i = 0; i < matches.length; i++) {
+                var highlightSpan = document.createElement('span');
+                highlightSpan.className = 'highlight';
+                highlightSpan.appendChild(document.createTextNode(matches[i]));
+                node.parentNode.insertBefore(highlightSpan, node);
+                
+                if (parts[i+1]) {
+                  node.parentNode.insertBefore(document.createTextNode(parts[i+1]), node);
+                }
+              }
+              
+              node.parentNode.removeChild(node);
+              return true;
+            }
+          }
+        } else if (node.nodeType === 1) { // 元素节点
+          // 处理子节点
+          var childNodes = Array.from(node.childNodes);
+          for (var i = 0; i < childNodes.length; i++) {
+            processNode(childNodes[i]);
+          }
+        }
+        return false;
+      }
+      
+      processNode(tempDiv);
+      return tempDiv.innerHTML;
+    }
+
+    function searchPublications() {
+      var input = document.getElementById("publicationSearch");
+      var filter = input.value.trim();
+      var filterUpper = filter.toUpperCase();
+      var container = document.querySelector(".publications-list");
+      var rows = container.getElementsByClassName("publication-row");
+      
+      var totalMatches = 0;
+      // 遍历所有论文条目
+      for (var i = 0; i < rows.length; i++) {
+        var detail = rows[i].querySelector(".publication-details");
+        var original = detail.getAttribute("data-original");
+        
+        // 创建临时元素提取纯文本内容（不含HTML标签）
+        var tempDiv = document.createElement('div');
+        tempDiv.innerHTML = original;
+        var textContent = tempDiv.textContent || tempDiv.innerText;
+        
+        // 使用纯文本内容来检查匹配
+        if (textContent.toUpperCase().indexOf(filterUpper) > -1) {
+          rows[i].style.display = "";
+          totalMatches++;
+          // 如果有关键词则高亮显示匹配部分，否则恢复原内容
+          if (filter !== "") {
+            detail.innerHTML = highlightTextWithoutHTML(original, filter);
+          } else {
+            detail.innerHTML = original;
+          }
+        } else {
+          rows[i].style.display = "none";
+          // 隐藏时恢复原始内容
+          detail.innerHTML = original;
+        }
+      }
+      
+      // 遍历所有年份标题，若其下无可见论文则隐藏该标题
+      var headers = container.getElementsByClassName("year-header");
+      for (var j = 0; j < headers.length; j++) {
+        var header = headers[j];
+        var sibling = header.nextElementSibling;
+        var groupHasVisible = false;
+        while (sibling && !sibling.classList.contains("year-header")) {
+          if (sibling.classList.contains("publication-row") && sibling.style.display !== "none") {
+            groupHasVisible = true;
+            break;
+          }
+          sibling = sibling.nextElementSibling;
+        }
+        header.style.display = groupHasVisible ? "" : "none";
+      }
+      
+      // 如果没有任何匹配条目，则显示提示信息
+      var noMatchMessage = document.getElementById("no-match-message");
+      if (totalMatches === 0) {
+        if (!noMatchMessage) {
+          noMatchMessage = document.createElement("p");
+          noMatchMessage.id = "no-match-message";
+          noMatchMessage.textContent = "No publications found.";
+          container.insertBefore(noMatchMessage, container.firstChild);
+        }
+      } else {
+        if (noMatchMessage) {
+          noMatchMessage.parentNode.removeChild(noMatchMessage);
+        }
+      }
+    }
+  </script>
+</body>
+</html>
