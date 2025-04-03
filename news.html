@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News - NetWis</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        .news-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .news-header {
+            margin-bottom: 30px;
+        }
+        .news-header h1 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-family: "Avenir Heavy";
+            color: #333;
+        }
+        .news-items {
+            display: flex;
+            flex-direction: column;
+        }
+        .news-item {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        .news-date {
+            font-weight: bold;
+            color: #555;
+            margin-bottom: 10px;
+        }
+        .news-content {
+            line-height: 1.6;
+        }
+        .news-content p {
+            margin: 0 0 10px 0;
+        }
+        .older-news-toggle {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            cursor: pointer;
+            font-weight: bold;
+            border: 1px solid #ddd;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .older-news-toggle:hover {
+            background-color: #e9e9e9;
+        }
+        .older-news-toggle .toggle-icon {
+            transition: transform 0.3s;
+        }
+        .older-news-toggle.active .toggle-icon {
+            transform: rotate(180deg);
+        }
+        .older-news-content {
+            display: none;
+        }
+        .older-news-content.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header with navigation -->
+    <header>
+        <div class="header-inner">
+            <a href="index.html">
+                <img src="./images/netwis_logo.png" alt="NetWIS Logo" class="logo">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="people.html">People</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li class="active"><a href="news.html">News</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="news-container">
+        <div class="news-header">
+            <h1>Lab News</h1>
+        </div>
+        <div class="news-items">
+            <!-- 2023 and newer news -->
+            <div class="news-item">
+                <div class="news-date">April, 2024</div>
+                <div class="news-content">
+                    <p>Dr. Wang is going to attend first-ever <a href="https://spectrumweek.org/">NSF Spectrum Week</a> to be held in Alexandria, Virginia, for our SWIFT project.</p>
+                </div>
+            </div>
+            
+            <div class="news-item">
+                <div class="news-date">April 6th, 2024</div>
+                <div class="news-content">
+                    <p>Mengning Li won first prize at the ECE 3-Minute Research Rally for her project "Hybrid Zone: Bridging Acoustic and Wi-Fi for Enhanced Gesture Recognition." Congratulations!</p>
+                </div>
+            </div>
+            
+            <div class="news-item">
+                <div class="news-date">May 28th, 2023</div>
+                <div class="news-content">
+                    <p>Rui's paper "TOP: Total Occupancy Guided Prediction of Binary Spectrum Tenancy" will be presented at IEEE ICC in Rome, marking our first in-person event after the pandemic.</p>
+                </div>
+            </div>
+            
+            <div class="news-item">
+                <div class="news-date">May 10th, 2023</div>
+                <div class="news-content">
+                    <p>Rui successfully completed his Ph.D. defense. Congratulations!</p>
+                </div>
+            </div>
+            
+            
+            <!-- Older news content -->
+                <div class="news-item">
+                    <div class="news-date">August, 2022</div>
+                    <div class="news-content">
+                        <p>Welcome our newest member, Mengning LI, to the NetWiS Lab! We look forward to working with Mengning!</p>
+                    </div>
+                </div>
+                
+                <div class="news-item">
+                    <div class="news-date">May, 2022</div>
+                    <div class="news-content">
+                        <p>Congratulations on Teng Fei's success on his qualification exam on May 27, 2022! Teng, good job!</p>
+                    </div>
+                </div>
+                
+                <div class="news-item">
+                    <div class="news-date">January, 2021</div>
+                    <div class="news-content">
+                        <p>Congratulations to our team on receiving an NSF award "Collaborative Research: SWIFT: LARGE: MAC-on-MAC: A Spectrum Orchestrating Control Plane for Coexisting Wireless Systems." in collaboration with Dr. Xin Wang (Stony Brook), Dr. Janise McNair, and Dr. Soumyajit Mandal (University of Florida).</p>
+                    </div>
+                </div>
+                
+                <div class="news-item">
+                    <div class="news-date">August, 2020</div>
+                    <div class="news-content">
+                        <p>Congratulations to our team on receiving an NSF award "Collaborative Research: SWIFT: LARGE: MAC-on-MAC: A Spectrum Orchestrating Control Plane for Coexisting Wireless Systems." in collaboration with Dr. Xin Wang (Stony Brook), Dr. Janise McNair, and Dr. Soumyajit Mandal (University of Florida).</p>
+                    </div>
+                </div>
+                
+                <div class="news-item">
+                    <div class="news-date">July, 2020</div>
+                    <div class="news-content">
+                        <p>Congratulations on Rui's presentation of "U-CIMAN: Uncover Spectrum and User Information in LTE Mobile Access Networks." in IEEE INFOCOM Virtual Meeting!</p>
+                    </div>
+                </div>
+                
+            <!-- Older news toggle button -->
+            <div class="older-news-toggle" id="olderNewsToggle">
+                <div>2019 and Before (click to expand)</div>
+                <div class="toggle-icon">▼</div>
+            </div>
+            <div class="older-news-content" id="olderNewsContent">
+                <div class="news-item">
+                    <div class="news-date">October, 2019</div>
+                    <div class="news-content">
+                        <p>Congratulations on Jie Wang who has successfully passed her PhD defense on "Modeling and Analysis of Mobile Data Dynamics in Heterogeneous Wireless Networks." Congratulations, Dr. Jie Wang!</p>
+                    </div>
+                </div>
+                
+                <div class="news-item">
+                    <div class="news-date">August, 2018</div>
+                    <div class="news-content">
+                        <p>Welcome our two new members, Cheng Chen for PhD program and Teng Fei in MS program!</p>
+                    </div>
+                </div>
+                
+                <div class="news-item">
+                    <div class="news-date">August, 2017</div>
+                    <div class="news-content">
+                        <p>Congratulations on Sigit Pambudi who has successfully passed his PhD defense on "Modeling and Evaluation of Cyber Physical Threats in Emerging Inter-dependent Networks." Congratulations, Dr. Pambudi!</p>
+                    </div>
+                </div>
+                
+                <div class="news-item">
+                    <div class="news-date">January 1st, 2017</div>
+                    <div class="news-content">
+                        <p>Congratulations on Dr. Wang's recent elevation to IEEE Fellow! Looking forward to greater success of yours!</p>
+                    </div>
+                </div>
+                
+                <div class="news-item">
+                    <div class="news-date">September 29, 2016</div>
+                    <div class="news-content">
+                        <p>Congratulations on Sigit Pambudi for successfully passing his Prelim Exam! Good Job, Sigit!</p>
+                    </div>
+                </div>
+                
+                <div class="news-item">
+                    <div class="news-date">June 6, 2016</div>
+                    <div class="news-content">
+                        <p>Congratulations on Mingkui Wei who has successfully passed his PhD defense on "Modeling, Evaluation and Enhancement of Threats-Induced Reliability in Cyber-Physical Systems." Congratulations again, Dr. Wei!</p>
+                    </div>
+                </div>
+                
+                <div class="news-item">
+                    <div class="news-date">April 30, 2016</div>
+                    <div class="news-content">
+                        <p>Congratulations on Jie Wang's Best-In-Session Paper Award on her paper "To Live or To Die: Encoutering Conflict Information Propagation over Simple Networks" presented at IEEE INFOCOM'16! Well done, Jie!</p>
+                    </div>
+                </div>
+                
+                <div class="news-item">
+                    <div class="news-date">April 19, 2016</div>
+                    <div class="news-content">
+                        <p>Congratulations on Jie Wang for successfully passing Qualify Exam in the area of Computer Networking! Good Job, Jie!</p>
+                    </div>
+                </div>
+                
+                <div class="news-item">
+                    <div class="news-date">November 27, 2015</div>
+                    <div class="news-content">
+                        <p>Congratulations on Jie Wang on her paper "To Live or To Die: Encoutering Conflict Information Propagation over Simple Networks" being accepted to IEEE INFOCOM'16! Well done, Jie!</p>
+                    </div>
+                </div>
+                
+                <div class="news-item">
+                    <div class="news-date">November 12, 2015</div>
+                    <div class="news-content">
+                        <p>Congratulations on Mingkui Wei has successfully passed his Preliminary exam on "Modeling, Evaluation, and Migigation of Networked Threats in Cyber-Physical Systems." Congratulations again, Mingkui!</p>
+                    </div>
+                </div>
+                
+                <div class="news-item">
+                    <div class="news-date">September 12, 2014</div>
+                    <div class="news-content">
+                        <p>Congratulations on Yujin Lin who has successfully passed her PhD defense on "Mobility and Traffic Correlations in Device-to-Device (D2D) Communication Networks." Congratulations again, Dr. Li!</p>
+                    </div>
+                </div>
+                
+                <div class="news-item">
+                    <div class="news-date">May 12, 2005</div>
+                    <div class="news-content">
+                        <p>Jungkee Song defended M.S. thesis successfully.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 NetWis. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const olderNewsToggle = document.getElementById('olderNewsToggle');
+            const olderNewsContent = document.getElementById('olderNewsContent');
+            
+            olderNewsToggle.addEventListener('click', function() {
+                olderNewsToggle.classList.toggle('active');
+                olderNewsContent.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Wenye Wang - NetWis</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        .profile-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .profile-header {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 30px;
+        }
+        .name-and-photos {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+        .profile-name {
+            flex: 1;
+        }
+        .profile-name h1 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            text-align: left;
+            font-family: "Avenir Heavy";
+        }
+        .profile-photos {
+            display: flex;
+            gap: 15px;
+        }
+        .photo-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .profile-photos img {
+            width: 200px;
+            height: 250px;
+            border-radius: 5px;
+            object-fit: cover;
+        }
+        .photo-caption {
+            margin-top: 5px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #555;
+        }
+        .recent-activities {
+            margin-top: 20px;
+            text-align: left;
+            max-width: 1200 px;
+        }
+        .recent-activities h3 {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+        .recent-activities ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        .recent-activities li {
+            margin-bottom: 8px;
+            font-size: 0.95em;
+        }
+        .profile-info {
+            flex: 1;
+            min-width: 300px;
+        }
+        .profile-info h2 {
+            margin-top: 0;
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 20px;
+        }
+        .profile-contact {
+            margin-bottom: 30px;
+        }
+        .profile-contact p {
+            margin: 5px 0;
+        }
+        .profile-section {
+            margin-bottom: 40px;
+        }
+        .profile-section h3 {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header with navigation -->
+    <header>
+        <div class="header-inner">
+            <a href="index.html">
+                <img src="./images/netwis_logo.png" alt="NetWIS Logo" class="logo">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="people.html">People</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="news.html">News</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="profile-container">
+        <div class="profile-header">
+            <div class="name-and-photos">
+                <div class="profile-name">
+                    <h1>Wenye Wang</h1>
+                    <div class="profile-info">
+                        <h2>Professor, IEEE Fellow</h2>
+                        
+                        <div class="profile-contact">
+                            <p>Department of Electrical and Computer Engineering,</p>
+                            <p>NC State University</p>
+                            <p>Phone: (919) 513 2549</p>
+                            <p>Email: <a href="mailto:wwang@ncsu.edu">wwang[at]ncsu.edu</a></p>
+                            <p>Office: 3056 Engineering Build II, 890 Oval Dr. Raleigh, NC 27695</p>
+                        </div>
+                        
+                        <div class="profile-section">
+                            <h3>Office Hours</h3>
+                            <p>Tuesdays 5:00 - 6:00pm in Spring 2025 and Fall 2025.</p>
+                            <p>Zoom meetings can be scheduled via emails or whatsapp (919-602-0965) by introducing your class (e.g., ECE 586, CSC/ECE 591-IoT, CSC 575 or ECE 407,) and name to start the conversation.</p>
+                        </div>
+                        
+                        <div class="profile-section">
+                            <h3>Biography</h3>
+                            <p>Wenye Wang received her Ph.D. degree in Electrical and Computer Engineering, from Georgia Institute of Technology (GaTech), with Dr. Ian F. Akyildiz (2002). She joined the Department of Electrical and Computer Engineering, NC State University, as an assistant professor and has been an associate professor since Fall 2008, and a full professor since Fall 2014. Her research interests include modeling and performance of wireless networking, spectrum sensing, prediction, and management, and their applications to Smart Grid and Internet of Things (IoT) systems. Dr. Wang received NSF CAREER Award in 2006. She is an ACM member and an IEEE Fellow of 2017 class.</p>
+                        </div>
+                        
+                        <div class="profile-section">
+                            <h3>Research</h3>
+                            <p>The Networking of Wireless Information Systems (NetWiS) laboratory led by Dr. Wenye Wang is focused on in-depth understanding, modeling, and performance evaluation of fundamental problems in mobile and wireless systems, such as mobility and spectrum management, with broad applications to the Internet of Things (IoT) systems. Our lab members include undergraduate students who gain experience in research and prepare for their graduate study, and graduate students who aim to make novel contributions to the wireless networking area. Currently, we are interested in spectrum monitoring and management in multi-RAT (radio access technology), as well as commodity (5G/WiFi bands) RF sensing for a variety of IoT applications.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-photos">
+                    <div class="photo-container">
+                        <img src="images/avatar/wenye1996.png" alt="1996 Beijing, China">
+                        <span class="photo-caption">1996 Beijing, China</span>
+                    </div>
+                    <div class="photo-container">
+                        <img src="images/avatar/wenye2016.jpg" alt="2016 Raleigh, NC">
+                        <span class="photo-caption">2016 Raleigh, NC</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Add Recent Activities section with right alignment -->
+            <div class="recent-activities">
+                <h3>Recent Activities</h3>
+                <ul>
+                    <li>2025 - IEEE INFOCOM, Technical Program Committee</li>
+                    <li>2024 - IEEE SECON, Publication Co-Chair</li>
+                    <li>2024 - IEEE ICC, Technical Program Committee, Co-Chair</li>
+                    <li>2023 - IEEE INFOCOM, Area Chair</li>
+                    <li>2021 - IEEE INFOCOM, Area Chair</li>
+                    <li>2020 - Tutorial Co-Chair, Technical Program Committee, IEEE ICC 2020</li>
+                    <li>2019 - Area Chair, Technical Program Committee, IEEE INFOCOM</li>
+                    <li>2018 - Area Chair, Technical Program Committee, IEEE INFOCOM</li>
+                    <li>2017 - Editor, IEEE/ACM Transactions on Networking, IEEE/ACM Transactions on Networking</li>
+                    <li>2017 - Co-Chair, Technical Program Committee, IEEE INFOCOM</li>
+                    <li>2016 - Co-Chair, ACM MobiHoc Posters</li>
+                    <li>2016 - Technical Program Committee, IEEE ICNP</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 NetWis. All rights reserved.</p>
+    </footer>
+</body>
+</html>
