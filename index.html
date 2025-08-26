@@ -6,74 +6,204 @@
   <title>NetWIS Lab</title>
   <link rel="stylesheet" href="./css/style.css" />
 </head>
-<body>
+<body class="index-page">
   <!-- Header always full width -->
   <header>
     <div class="header-inner">
-        <a href="index.html">
-            <img src="./images/netwis_logo.png" alt="NetWIS Logo" class="logo">
-        </a>
-        <nav>
-            <ul>
-                <li class="active"><a href="index.html">Home</a></li>
-                <li><a href="people.html">People</a></li>
-                <li><a href="publications.html">Publications</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="news.html">News</a></li>
-            </ul>
-        </nav>
+      <a href="index.html">
+        <img src="./images/netwis_logo.png" alt="NetWIS Logo" class="logo">
+      </a>
+      <nav>
+        <ul>
+          <li class="active"><a href="index.html" class="nav-link active">HOME</a></li>
+          <li><a href="people.html" class="nav-link">PEOPLE</a></li>
+          <li><a href="publications.html" class="nav-link">PUBLICATIONS</a></li>
+          <li><a href="projects.html" class="nav-link">PROJECTS</a></li>
+          <li><a href="news.html" class="nav-link">NEWS</a></li>
+        </ul>
+      </nav>
     </div>
-</header>
+  </header>
+
+  <!-- Header Image -->
+  <div class="header-image-container">
+    <img src="./images/College_of_Engineering_Building_II,_North_Carolina_State_University_(2013).jpg" alt="Engineering Building II" class="header-image">
+    <!-- <div class="header-text-overlay">
+      <div class="header-text">
+        <div class="lab-name">NetWIS Lab</div>
+        <div class="university-name">NC State University</div>
+      </div> -->
+    </div>
+  </div>
 
   <!-- Main Container -->
   <div class="container">
-    <!-- Main Content -->
-    <main>
-      <div class="content">
-        <!-- Left Column (70% width): Lab Description -->
-        <div class="left-column">
-          <p>
-            <em>The Networking of Wireless Information Systems (NetWIS) laboratory</em> led by Dr. Wenye Wang, is focused broadly on in-depth understanding, algorithm and protocol design in mobile wireless networks. Our vision is that by developing new models, measuring experimental results, and understanding basic properties of wireless networks in different circumstances, it is possible to design algorithms, protocols, and architectures that enable a wireless network to have robust architecture and topology and high performance for diversified applications and large-scale distributed, intelligent systems.</em>
-          </p>
-          <p>
-            Our lab members include undergraduate students who gain their experience in research and prepare for their graduate study, and graduate students who aim to make novel contributions to the wireless networking area. Currently, we are focused on issues like mobile clouds, vehicle-to-vehicle communications, and wireless in the Smart Grid from the perspective of network resilience and performance in the presence of failures and abnormality.
-          </p>
+    <!-- About Us Section -->
+    <section class="section-spacing">
+      <h2 class="section-title">About Us</h2>
+      <div class="about-us-content">
+        <p>
+            The NetWIS Lab (Networking of Wireless Information Systems), led by <a href="wwang.html" style="color:#d32f2f; text-decoration:underline;">Dr. Wenye Wang</a>, is a research group dedicated to advancing the understanding and protocol design of mobile wireless networks. Our vision is to create resilient, high-performance systems for diverse applications and large-scale intelligent platforms. Through new models, experiments, and analysis of wireless networks in varied conditions, we design algorithms that support robust structures and reliable performance. Check out our <a href="publications.html" style="color:#d32f2f; text-decoration:underline;">publications</a> page for more detail.
+        </p>
+        <p>
+          The lab brings together undergraduate students gaining their first research experience as preparation for graduate study, and graduate students pursuing innovative contributions to the field of wireless networking.
+        </p>
+      </div>
+    </section>
+
+    <!-- Our Focus Areas Section -->
+    <section class="section-spacing">
+      <h2 class="section-title">Our Focus Areas</h2>
+      <div class="focus-areas-grid">
+        <div class="focus-item">
+          <h4>Modeling & Measurement</h4>
+          <p>Developing new models and experimental methods to understand wireless networks under diverse conditions.</p>
         </div>
-        <!-- Right Column (30% width): News -->
-        <div class="right-column">
-          <h2>Recent News</h2>
+        <div class="focus-item">
+          <h4>Algorithms & Protocols</h4>
+          <p>Designing efficient algorithms and protocols to improve mobile wireless networking.</p>
+        </div>
+        <div class="focus-item">
+          <h4>Resilience & Performance</h4>
+          <p>Enhancing robustness and optimizing performance in the presence of failures or abnormal events.</p>
+        </div>
+        <div class="focus-item">
+          <h4>Applications & Architectures</h4>
+          <p>Building network architectures for emerging domains such as mobile clouds, vehicle-to-vehicle communication, and the smart grid.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- News and Activities Section -->
+    <section class="section-spacing">
+      <div class="news-activities-container">
+        <!-- News Section -->
+        <div class="news-column">
+          <h2 class="section-title">News</h2>
+          <div class="news-items">
             <details>
-                <summary>[04/06/2024] Mengning wins ECE 3MT Research Ally Prize</summary>
-                <p>On April 6th, 2024, Mengning Li won first prize at the ECE 3-Minute Research Rally for her project “Hybrid Zone: Bridging Acoustic and Wi-Fi for Enhanced Gesture Recognition.” Congratulations!</p>
-              </details>
-              <details>
-                <summary>[05/08/2023] Rui's Paper to be Presented at IEEE ICC Rome</summary>
-                <p>On May 28th, 2023, Rui's paper “TOP: Total Occupancy Guided Prediction of Binary Spectrum Tenancy” will be presented at IEEE ICC in Rome, marking our first in-person event after the pandemic.</p>
-              </details>
-              <details>
-                <summary>[05/10/2023] Rui Completes Ph.D. Defense!</summary>
-                <p>On May 10th, 2023, Rui successfully completed his Ph.D. defense. Congratulations!</p>
-              </details>
-          
-          <!-- Google Calendar Section -->
-          <h2 class="calendar-heading">Subscribe Our Calendar!</h2>
-          <div class="google-calendar-container">
-            <iframe src="https://calendar.google.com/calendar/embed?src=YOUR_CALENDAR_ID&ctz=America%2FNew_York" 
-                    style="border: 0" 
-                    width="100%" 
-                    height="300" 
-                    frameborder="0" 
-                    scrolling="no">
-            </iframe>
+              <summary>07/31/2024 - Mengning's Paper to be presented at IEEE INFOCOM</summary>
+              <p>On April 6th, 2024, Mengning Li won first prize at the ECE 3x-Minute Research Rally for her project "Hybrid Zone: Bridging Acoustic and Wi-Fi for Enhanced Gesture Recognition." Congratulations!</p>
+            </details>
+            <details>
+              <summary>04/06/2024 - Mengning wins ECE 3MT Research Ally Prize</summary>
+              <p>On April 6th, 2024, Mengning Li won first prize at the ECE 3-Minute Research Rally for her project "Hybrid Zone: Bridging Acoustic and Wi-Fi for Enhanced Gesture Recognition." Congratulations!</p>
+            </details>
+            <details>
+              <summary>05/08/2023 - Rui's Paper to be Presented at IEEE ICC Rome</summary>
+              <p>On May 28th, 2023, Rui's paper "TOP: Total Occupancy Guided Prediction of Binary Spectrum Tenancy" will be presented at IEEE ICC in Rome, marking our first in-person event after the pandemic.</p>
+            </details>
+          </div>
+          <div class="view-all">
+            <a href="/news">View All News →</a>
+          </div>
+        </div>
+        
+        <!-- Activities Section -->
+        <div class="activities-column">
+          <h2 class="section-title">Activities</h2>
+          <div class="activities-list">
+            <ul>
+              <li><strong>2025</strong> - IEEE INFOCOM, Technical Program Committee</li>
+              <li><strong>2024</strong> - IEEE SECON, Publication Co-Chair</li>
+              <li><strong>2024</strong> - IEEE ICC, Technical Program Committee, Co-Chair</li>
+            </ul>
+            <div class="view-all">
+              <a href="/wwang">View All Activities →</a>
+            </div>
           </div>
         </div>
       </div>
-    </main>
+    </section>
 
     <!-- Footer -->
     <footer>
       <p>© 2025 NetWIS Lab. All Rights Reserved.</p>
     </footer>
   </div>
+
+  <script>
+    // Ensure the lab description extends to match the right column height
+    document.addEventListener('DOMContentLoaded', function() {
+      function adjustHeight() {
+        const rightColumn = document.querySelector('.right-column');
+        const labDescription = document.querySelector('.lab-description');
+        if (rightColumn && labDescription) {
+          labDescription.style.minHeight = rightColumn.offsetHeight + 'px';
+        }
+      }
+      
+      // Align header text boundaries
+      function alignHeaderText() {
+        const labName = document.querySelector('.lab-name');
+        const universityName = document.querySelector('.university-name');
+        
+        if (labName && universityName) {
+          // Reset letter-spacing to measure natural width
+          labName.style.letterSpacing = '0px';
+          universityName.style.letterSpacing = '0px';
+          
+          // Get natural widths
+          const labWidth = labName.offsetWidth;
+          const uniWidth = universityName.offsetWidth;
+          
+          // Calculate additional spacing needed
+          const widthDiff = Math.abs(labWidth - uniWidth);
+          
+          if (labWidth > uniWidth) {
+            // Make university name match lab name width
+            const extraSpacing = widthDiff / (universityName.textContent.length - 1);
+            universityName.style.letterSpacing = extraSpacing + 'px';
+            labName.style.letterSpacing = '2px';
+          } else {
+            // Make lab name match university name width
+            const extraSpacing = widthDiff / (labName.textContent.length - 1);
+            labName.style.letterSpacing = (2 + extraSpacing) + 'px';
+            universityName.style.letterSpacing = '0px';
+          }
+        }
+      }
+      
+      adjustHeight();
+      alignHeaderText();
+      initHeader();
+      
+      // Header scroll effect
+      function handleScroll() {
+        const header = document.querySelector('header');
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        const isHomePage = window.location.pathname.endsWith('index.html') || window.location.pathname.endsWith('/');
+        
+        if (isHomePage) {
+          // Home page: transparent header that becomes solid on scroll
+          if (scrollTop > 0) {
+            header.classList.add('scrolled');
+          } else {
+            header.classList.remove('scrolled');
+          }
+        } else {
+          // Other pages: always solid header
+          header.classList.add('scrolled');
+        }
+      }
+      
+      // Initialize header state on load
+      function initHeader() {
+        const header = document.querySelector('header');
+        const isHomePage = window.location.pathname.endsWith('index.html') || window.location.pathname.endsWith('/');
+        
+        if (!isHomePage) {
+          header.classList.add('scrolled');
+        }
+      }
+      
+      window.addEventListener('resize', function() {
+        adjustHeight();
+        alignHeaderText();
+      });
+      
+      window.addEventListener('scroll', handleScroll);
+    });
+  </script>
 </body>
 </html>

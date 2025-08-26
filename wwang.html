@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="./css/style.css">
     <style>
         .profile-container {
-            max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
             width: 100%;
@@ -33,7 +32,7 @@
             margin-top: 0;
             margin-bottom: 10px;
             text-align: left;
-            font-family: "Avenir Heavy";
+            /* font-family and color inherited from global h1 */
             font-size: 2em;
         }
         .profile-photos {
@@ -63,7 +62,6 @@
         .recent-activities {
             margin-top: 20px;
             text-align: left;
-            max-width: 1200px;
             width: 100%;
         }
         .recent-activities h3 {
@@ -267,5 +265,13 @@
     <footer>
         <p>&copy; 2025 NetWis. All rights reserved.</p>
     </footer>
+
+    <script>
+        // Initialize header for non-home pages
+        document.addEventListener('DOMContentLoaded', function() {
+            const header = document.querySelector('header');
+            header.classList.add('scrolled');
+        });
+    </script>
 </body>
 </html>

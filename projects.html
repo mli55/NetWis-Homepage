@@ -7,22 +7,20 @@
     <link rel="stylesheet" href="./css/style.css">
     <style>
         .projects-container {
-            max-width: 1200px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 200px 20px 20px 20px;
         }
         .projects-header {
             margin-bottom: 30px;
             text-align: center;
         }
         .projects-header h1 {
-            font-family: "Avenir Heavy";
+            /* font-family and color inherited from global h1 */
             margin-bottom: 10px;
         }
         .projects-header p {
             font-size: 1.1em;
             color: #555;
-            max-width: 800px;
             margin: 0 auto;
             line-height: 1.6;
         }
@@ -71,7 +69,7 @@
             </a>
             <nav>
                 <ul>
-                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="people.html">People</a></li>
                     <li><a href="publications.html">Publications</a></li>
                     <li class="active"><a href="projects.html">Projects</a></li>
@@ -241,5 +239,13 @@
     <footer>
         <p>&copy; 2025 NetWis. All rights reserved.</p>
     </footer>
+
+    <script>
+        // Initialize header for non-home pages
+        document.addEventListener('DOMContentLoaded', function() {
+            const header = document.querySelector('header');
+            header.classList.add('scrolled');
+        });
+    </script>
 </body>
 </html>

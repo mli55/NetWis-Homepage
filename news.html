@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="./css/style.css">
     <style>
         :root {
-            --primary-color: #003366;
-            --secondary-color: #4a86e8;
+            --primary-color: #ea1500;
+            --secondary-color: #b40000;
             --accent-color: #f9a825;
             --text-color: #333333;
             --light-text: #555555;
@@ -19,9 +19,8 @@
         
         .news-container {
             width: 100%;
-            max-width: 1200px;
             margin: 0 auto;
-            padding: 1.25rem;
+            padding: 200px 1.25rem 1.25rem 1.25rem;
             box-sizing: border-box;
         }
         
@@ -32,8 +31,7 @@
         .news-header h1 {
             margin-top: 0;
             margin-bottom: 0.625rem;
-            font-family: "Avenir Heavy", Arial, sans-serif;
-            color: var(--primary-color);
+            /* font-family and color inherited from global h1 */
         }
         
         .news-items {
@@ -331,6 +329,10 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
+            // Initialize header for non-home pages
+            const header = document.querySelector('header');
+            header.classList.add('scrolled');
+            
             const olderNewsToggle = document.getElementById('olderNewsToggle');
             const olderNewsContent = document.getElementById('olderNewsContent');
             
